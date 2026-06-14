@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Web Development Guide 2026 | Automora Tech Solutions</title>
+<meta name="title" content="Secure Web Development Guide 2026 | Automora Tech Solutions">
+<meta name="description" content="Learn secure web development practices including input validation, authentication, encryption, OWASP top 10 prevention, and security testing. Written by Adarsh Sharma.">
+<meta name="keywords" content="secure web development, secure coding practices, OWASP top 10, web application security, secure development lifecycle">
+<meta name="author" content="Automora Tech Solutions LLP">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://www.automoratechsolutions.com/blog/secure-web-development-guide/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.automoratechsolutions.com/blog/secure-web-development-guide/">
+<meta property="og:title" content="Secure Web Development Guide 2026 | Automora Tech Solutions">
+<meta property="og:description" content="Learn secure web development practices. Input validation, authentication, encryption, OWASP top 10 prevention, and security testing.">
+<meta property="og:image" content="https://www.automoratechsolutions.com/images/Logo.png"><meta property="og:site_name" content="Automora Tech Solutions"><meta property="og:locale" content="en_IN">
+<meta property="article:published_time" content="2026-06-10T10:00:00+05:30">
+<meta property="article:author" content="Adarsh Sharma">
+<meta property="article:section" content="Cybersecurity">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Secure Web Development Guide 2026 | Automora Tech Solutions">
+<meta name="twitter:description" content="Learn secure web development practices. Input validation, authentication, encryption, OWASP top 10 prevention.">
+<meta name="twitter:image" content="https://www.automoratechsolutions.com/images/Logo.png">
+<link rel="icon" type="image/png" href="../../images/Logo copy.png">
+<link rel="apple-touch-icon" href="../../images/Logo copy.png">
+<link rel="shortcut icon" type="image/png" href="../../images/Logo copy.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://www.automoratechsolutions.com/"},
+  {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.automoratechsolutions.com/blog/"},
+  {"@type":"ListItem","position":3,"name":"Cybersecurity","item":"https://www.automoratechsolutions.com/blog/#cybersecurity"},
+  {"@type":"ListItem","position":4,"name":"Secure Web Development Guide","item":"https://www.automoratechsolutions.com/blog/secure-web-development-guide/"}
+]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Secure Web Development Guide 2026: Build Security-First Websites","description":"A comprehensive guide to secure web development — covering input validation, authentication, encryption, OWASP top 10 prevention, and security testing.","image":"https://www.automoratechsolutions.com/images/Logo.png","author":{"@type":"Person","name":"Adarsh Sharma","url":"https://www.automoratechsolutions.com/adarsh-sharma/"},"publisher":{"@type":"Organization","name":"Automora Tech Solutions LLP","logo":{"@type":"ImageObject","url":"https://www.automoratechsolutions.com/images/Logo.png"}},"datePublished":"2026-06-10","dateModified":"2026-06-10","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.automoratechsolutions.com/blog/secure-web-development-guide/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"What is secure web development?","acceptedAnswer":{"@type":"Answer","text":"Secure web development is the practice of building websites with security considerations at every stage — from design through development, testing, and deployment. It involves following security best practices, preventing common vulnerabilities (OWASP Top 10), and implementing robust authentication and encryption."}},
+  {"@type":"Question","name":"What is the OWASP Top 10?","acceptedAnswer":{"@type":"Answer","text":"The OWASP Top 10 is a standard awareness document listing the ten most critical web application security risks. It includes broken access control, cryptographic failures, injection (SQL, NoSQL, OS), insecure design, security misconfiguration, and vulnerable components."}},
+  {"@type":"Question","name":"How do I prevent SQL injection?","acceptedAnswer":{"@type":"Answer","text":"Use parameterised queries or prepared statements instead of dynamically constructing SQL queries with user input. Input validation, stored procedures, and the principle of least privilege for database accounts also help prevent SQL injection."}},
+  {"@type":"Question","name":"What security testing should I do before launching a website?","acceptedAnswer":{"@type":"Answer","text":"Conduct automated vulnerability scanning, manual penetration testing, dependency scanning for known vulnerabilities, code review focused on security, and configuration review. For most business websites, automated scanning plus manual testing of critical flows is sufficient."}}
+]}</script>
+<style>.blog-post{max-width:800px;margin:0 auto;padding:0 48px 80px;position:relative;z-index:2;}
+.blog-post-hero{min-height:52vh;display:flex;flex-direction:column;justify-content:flex-end;padding:140px 48px 48px;max-width:1440px;margin:0 auto;position:relative;overflow:hidden;}
+.blog-post-hero .pg-hero-bg{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 70% 90% at 20% 50%,black 20%,transparent 100%);}
+.blog-post-hero .pg-hero-glow{position:absolute;top:-20%;right:-10%;width:700px;height:700px;border-radius:50%;pointer-events:none;background:radial-gradient(ellipse,rgba(212,255,0,.04) 0%,transparent 60%);}
+.bp-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px;position:relative;z-index:2;}
+.bp-cat{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--volt);padding:5px 12px;border:1px solid rgba(212,255,0,.2);border-radius:100px;background:var(--volt-dim);}
+.bp-date{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--ghost);}
+.bp-read{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--ghost);}
+.bp-read::before{content:'•';margin-right:8px;color:var(--wire2);}
+.bp-title{font-family:var(--serif);font-size:clamp(36px,5vw,64px);line-height:.95;letter-spacing:-.03em;color:var(--smoke);margin-bottom:20px;position:relative;z-index:2;max-width:900px;}
+.bp-author-line{display:flex;align-items:center;gap:10px;position:relative;z-index:2;margin-bottom:12px;}
+.bp-av{width:36px;height:36px;border-radius:50%;background:var(--volt);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:16px;font-style:italic;color:var(--ink);font-weight:700;}
+.bp-aname{font-size:13px;color:var(--fog);}
+.bp-aname a{color:var(--volt);text-decoration:underline;text-underline-offset:3px;}
+.bp-toc{background:var(--ink2);border:1px solid var(--wire);border-radius:16px;padding:32px 36px;margin-bottom:48px;}
+.bp-toc-title{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--volt);margin-bottom:16px;font-family:var(--mono);}
+.bp-toc-list{list-style:none;padding:0;margin:0;}
+.bp-toc-list li{margin-bottom:8px;}
+.bp-toc-list a{font-size:14px;color:var(--fog);transition:color .2s;display:flex;align-items:center;gap:8px;}
+.bp-toc-list a::before{content:'→';color:var(--volt);font-family:var(--mono);font-size:11px;}
+.bp-toc-list a:hover{color:var(--smoke);}
+.bp-content h2{font-family:var(--serif);font-size:clamp(28px,3.5vw,40px);color:var(--smoke);letter-spacing:-.02em;line-height:1.1;margin-top:56px;margin-bottom:20px;}
+.bp-content h3{font-family:var(--syne);font-size:18px;font-weight:700;color:var(--smoke);margin-top:36px;margin-bottom:14px;}
+.bp-content p{font-size:15px;line-height:1.9;color:var(--fog);margin-bottom:20px;}
+.bp-content ul,.bp-content ol{margin-bottom:24px;padding-left:24px;}
+.bp-content li{font-size:15px;line-height:1.9;color:var(--fog);margin-bottom:8px;}
+.bp-content strong{color:var(--smoke);}
+.bp-content a{color:var(--volt);text-decoration:underline;text-underline-offset:3px;}
+.bp-content blockquote{border-left:2px solid var(--volt);padding:20px 24px;margin:32px 0;background:var(--ink2);border-radius:0 12px 12px 0;font-size:16px;line-height:1.8;color:var(--fog);font-style:italic;}
+.bp-div{height:1px;background:linear-gradient(90deg,transparent,var(--wire2) 20%,var(--wire2) 80%,transparent);margin:0;}
+.bp-author-bio{background:var(--ink2);border:1px solid var(--wire);border-radius:20px;padding:40px;margin-top:56px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;}
+.bp-author-av{width:72px;height:72px;border-radius:50%;background:var(--volt);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:32px;font-style:italic;color:var(--ink);font-weight:700;flex-shrink:0;}
+.bp-author-info .chip{margin-bottom:12px;}
+.bp-author-name{font-family:var(--serif);font-size:24px;color:var(--smoke);margin-bottom:6px;}
+.bp-author-desc{font-size:13px;line-height:1.8;color:var(--fog);}
+.bp-author-desc a{color:var(--volt);text-decoration:underline;text-underline-offset:2px;}
+.bp-inline-cta{background:var(--ink2);border:1px solid var(--wire);border-radius:16px;padding:36px 40px;margin:40px 0;text-align:center;}
+.bp-inline-cta p{font-size:15px;line-height:1.8;color:var(--fog);margin-bottom:20px;}
+@media(max-width:1024px){.blog-post-hero{padding:120px 24px 36px;}.blog-post{padding:0 24px 60px;}.bp-toc{padding:24px 28px;}.bp-author-bio{grid-template-columns:1fr;text-align:center;padding:28px;}.bp-author-av{margin:0 auto;}.bp-inline-cta{padding:28px 24px;}}
+@media(max-width:640px){.blog-post-hero{padding:100px 16px 28px;}.blog-post{padding:0 16px 40px;}.bp-toc{padding:20px 20px;}.bp-author-bio{padding:24px 20px;gap:16px;}.bp-title{font-size:clamp(28px,8vw,36px);}.bp-inline-cta{padding:24px 16px;}}
+</style>
+</head>
+<body>
+<div id="c-dot"></div><div id="c-ring"></div>
+<nav>
+  <div class="nav-blur"></div>
+  <div class="nav-left"><a href="../../" class="logo"><img src="../../images/Logo-white.png" alt="Automora Tech Solutions" class="logo-img logo-dark"><img src="../../images/Logo.png" alt="Automora Tech Solutions" class="logo-img logo-light"></a></div>
+  <div class="nav-center"><div class="nav-pills"><a href="../../" class="np">Home</a><a href="../../services/" class="np">Services</a><a href="../../case-studies/" class="np">Work</a><a href="../../about/" class="np">About</a><a href="../../contact/" class="np">Contact</a></div></div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle theme"><span class="theme-icon-dark">☽</span><span class="theme-icon-light">☀</span></button>
+    <a href="../../contact/" class="nav-cta">Start a Project ↗</a>
+    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="../../" class="mob-link">Home</a><a href="../../services/" class="mob-link">Services</a><a href="../../case-studies/" class="mob-link">Work</a><a href="../../about/" class="mob-link">About</a><a href="../../contact/" class="mob-link">Contact</a><a href="../../contact/" class="btn-v mob-cta">Start a Project ↗</a>
+</div>
+
+<section class="blog-post-hero">
+  <div class="pg-hero-bg"></div>
+  <div class="pg-hero-glow"></div>
+  <div class="breadcrumbs rv">
+    <a href="../../">Home</a><span class="bc-sep">/</span><a href="../../blog/">Blog</a><span class="bc-sep">/</span><a href="../../blog/#cybersecurity">Cybersecurity</a><span class="bc-sep">/</span><span>Secure Web Development Guide</span>
+  </div>
+  <div class="bp-meta rv d1">
+    <span class="bp-cat">Cybersecurity · Web Development</span>
+    <span class="bp-date">10 June 2026</span>
+    <span class="bp-read">10 min read</span>
+  </div>
+  <h1 class="bp-title rv d2">Secure Web Development Guide 2026: Build Security-First Websites</h1>
+  <div class="bp-author-line rv d3">
+    <div class="bp-av">A</div>
+    <div class="bp-aname">Written by <a href="../../adarsh-sharma/">Adarsh Sharma</a>, Co-Founder & CTO at Automora Tech Solutions LLP</div>
+  </div>
+</section>
+
+<div class="bp-div"></div>
+
+<article class="blog-post">
+  <div class="bp-toc rv">
+    <div class="bp-toc-title">Table of Contents</div>
+    <ul class="bp-toc-list">
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#owasp">OWASP Top 10 Overview</a></li>
+      <li><a href="#input">Input Validation & Sanitisation</a></li>
+      <li><a href="#auth">Authentication & Session Management</a></li>
+      <li><a href="#encryption">Encryption & Data Protection</a></li>
+      <li><a href="#dependencies">Managing Dependencies</a></li>
+      <li><a href="#testing">Security Testing & Code Review</a></li>
+      <li><a href="#faq">Frequently Asked Questions</a></li>
+    </ul>
+  </div>
+
+  <div class="bp-content">
+    <h2 id="intro">Introduction</h2>
+    <p>Security should never be an afterthought in web development. When security is bolted on at the end of a project, the result is almost always weaker, more expensive, and harder to maintain than if security is built in from the start.</p>
+    <p>As a <a href="../../website-development-company-thane/">web development company</a>, we at Automora Tech Solutions follow security-first development practices. This <strong>secure web development guide</strong> covers the essential practices every developer should follow. Whether you're building a simple brochure site or a complex web application, these principles apply. <a href="../../adarsh-sharma/">Adarsh Sharma</a> has been following secure development practices for over 8 years and shares what actually works in production.</p>
+
+    <h2 id="owasp">OWASP Top 10 Overview</h2>
+    <p>The OWASP Top 10 is the industry-standard list of the most critical web application security risks. Every web developer should understand these vulnerabilities:</p>
+    <ol>
+      <li><strong>Broken Access Control:</strong> Users accessing data or functions they shouldn't have permission to</li>
+      <li><strong>Cryptographic Failures:</strong> Weak or missing encryption for sensitive data</li>
+      <li><strong>Injection:</strong> SQL, NoSQL, OS, and LDAP injection attacks</li>
+      <li><strong>Insecure Design:</strong> Architecture-level security flaws</li>
+      <li><strong>Security Misconfiguration:</strong> Default credentials, unnecessary features enabled, improper headers</li>
+      <li><strong>Vulnerable Components:</strong> Outdated libraries, frameworks, and software</li>
+      <li><strong>Identification & Authentication Failures:</strong> Weak passwords, session management issues</li>
+      <li><strong>Software & Data Integrity Failures:</strong> Compromised update mechanisms, CI/CD pipelines</li>
+      <li><strong>Security Logging & Monitoring Failures:</strong> Not detecting or responding to breaches</li>
+      <li><strong>Server-Side Request Forgery (SSRF):</strong> Exploiting server-side requests to access internal resources</li>
+    </ol>
+    <p>We address the most common and impactful vulnerabilities below.</p>
+
+    <h2 id="input">Input Validation & Sanitisation</h2>
+    <p>Never trust user input. Every piece of data coming from a user — form fields, URL parameters, file uploads, API requests — must be validated and sanitised before processing.</p>
+    <h3>Input Validation</h3>
+    <p>Check that input meets expected criteria: correct data type, appropriate length, valid format, within acceptable range. Use whitelist validation (accept only known-good values) rather than blacklist validation (reject known-bad values).</p>
+    <h3>SQL Injection Prevention</h3>
+    <p>SQL injection remains one of the most dangerous and common vulnerabilities. The only reliable defence is parameterised queries (prepared statements). Never concatenate user input directly into SQL queries. Most modern frameworks (Laravel, Django, Ruby on Rails) use parameterised queries by default — always use the framework's query builder or ORM safely.</p>
+    <h3>XSS (Cross-Site Scripting) Prevention</h3>
+    <p>Sanitise any user input that will be rendered in HTML. Use context-aware escaping — what works for HTML body content won't work for JavaScript strings or URL parameters. Content Security Policy (CSP) headers provide an additional layer of protection.</p>
+
+    <h2 id="auth">Authentication & Session Management</h2>
+    <p>Weak authentication is a leading cause of data breaches. Essential practices:</p>
+    <ul>
+      <li><strong>Password hashing:</strong> Use bcrypt, Argon2, or PBKDF2 — never store plain text or MD5/SHA1 hashes</li>
+      <li><strong>Rate limiting:</strong> Limit login attempts to prevent brute force attacks</li>
+      <li><strong>Multi-factor authentication:</strong> Require 2FA for admin accounts and sensitive operations</li>
+      <li><strong>Session security:</strong> Use secure, HTTP-only cookies with short expiration; regenerate session IDs after login</li>
+      <li><strong>Password policies:</strong> Enforce minimum length (12+ characters) and complexity without making them so annoying that users write them on sticky notes</li>
+      <li><strong>Account lockout:</strong> Temporarily lock accounts after multiple failed login attempts</li>
+    </ul>
+
+    <h2 id="encryption">Encryption & Data Protection</h2>
+    <p>All sensitive data should be encrypted both in transit and at rest:</p>
+    <ul>
+      <li><strong>In transit (TLS/SSL):</strong> All communication between the user's browser and your server must use HTTPS. Redirect HTTP to HTTPS. Use modern TLS 1.3 where possible</li>
+      <li><strong>At rest:</strong> Encrypt sensitive data stored in your database — personal information, payment details, authentication secrets. Use strong, industry-standard encryption algorithms (AES-256)</li>
+      <li><strong>Environment variables:</strong> Never hardcode secrets, API keys, or database credentials in code. Use environment variables or a secret management service</li>
+      <li><strong>Data minimisation:</strong> Only collect and store the data you actually need. Less data = less risk</li>
+    </ul>
+
+    <h2 id="dependencies">Managing Dependencies</h2>
+    <p>Modern web applications rely on dozens (often hundreds) of third-party packages. Each dependency is a potential attack vector. Best practices:</p>
+    <ul>
+      <li>Keep dependencies up to date — subscribe to security advisories for your stack</li>
+      <li>Use automated dependency scanning tools (Dependabot, Snyk, npm audit)</li>
+      <li>Pin dependency versions to prevent unexpected breaking changes</li>
+      <li>Remove unused dependencies — less code means less surface area for attacks</li>
+      <li>Review licenses and maintain a software bill of materials (SBOM)</li>
+    </ul>
+
+    <h2 id="testing">Security Testing & Code Review</h2>
+    <p>Security testing should be integrated throughout the development lifecycle:</p>
+    <ul>
+      <li><strong>Automated scanning:</strong> Run vulnerability scanners regularly (OWASP ZAP, Burp Suite)</li>
+      <li><strong>Dependency scanning:</strong> Automated checks for known vulnerabilities in third-party packages</li>
+      <li><strong>Code review:</strong> Every code change should be reviewed by at least one other developer, with attention to security implications</li>
+      <li><strong>Penetration testing:</strong> For critical applications, engage security professionals for manual testing</li>
+      <li><strong>Configuration review:</strong> Regularly audit server and application configuration for security best practices</li>
+    </ul>
+    <p>At Automora, we include security testing as a standard part of our <a href="../../website-development-company-thane/">web development process</a>. Every site we build is scanned for common vulnerabilities before launch.</p>
+
+    <div class="bp-inline-cta">
+      <p><strong>Need a security audit for your web application?</strong> We review your codebase, dependencies, and deployment configuration for security vulnerabilities.</p>
+      <a href="../../contact/" class="btn-v">Get a Security Audit ↗</a>
+    </div>
+
+    <div class="bp-author-bio">
+      <div class="bp-author-av">A</div>
+      <div class="bp-author-info">
+        <div class="chip">About the Author</div>
+        <div class="bp-author-name">Adarsh Sharma</div>
+        <p class="bp-author-desc"><strong>Adarsh Sharma</strong> is the Co-Founder & CTO of <a href="../../">Automora Tech Solutions LLP</a>. He has been building secure web applications for over 8 years and is passionate about making secure development practices accessible to all developers. <a href="../../adarsh-sharma/">More about Adarsh →</a></p>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-s" style="border-top:none;padding:0;margin-top:24px;">
+      <div class="faq-grid" style="padding:0;">
+        <div class="faq-item open" id="bp-faq-1">
+          <div class="faq-q" onclick="toggleFaq('bp-faq-1')"><div class="faq-q-text">What is secure web development?</div><div class="faq-icon">+</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Secure web development incorporates security at every stage — design, development, testing, deployment. It follows security best practices, prevents OWASP Top 10 vulnerabilities, and implements robust authentication, encryption, and access controls.</div></div>
+        </div>
+        <div class="faq-item" id="bp-faq-2">
+          <div class="faq-q" onclick="toggleFaq('bp-faq-2')"><div class="faq-q-text">What is the OWASP Top 10?</div><div class="faq-icon">+</div></div>
+          <div class="faq-a"><div class="faq-a-inner">The OWASP Top 10 lists the ten most critical web application security risks: broken access control, cryptographic failures, injection, insecure design, security misconfiguration, vulnerable components, authentication failures, and others.</div></div>
+        </div>
+        <div class="faq-item" id="bp-faq-3">
+          <div class="faq-q" onclick="toggleFaq('bp-faq-3')"><div class="faq-q-text">How do I prevent SQL injection?</div><div class="faq-icon">+</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Use parameterised queries or prepared statements. Never concatenate user input directly into SQL queries. Use your framework's ORM safely. Apply input validation and the principle of least privilege for database accounts.</div></div>
+        </div>
+        <div class="faq-item" id="bp-faq-4">
+          <div class="faq-q" onclick="toggleFaq('bp-faq-4')"><div class="faq-q-text">What security testing should I do before launch?</div><div class="faq-icon">+</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Automated vulnerability scanning, manual penetration testing for critical flows, dependency scanning for known vulnerabilities, code review focused on security, and configuration review. For most business websites, automated scanning plus manual testing is sufficient.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<section class="cta-s">
+  <div class="cta-glow"></div>
+  <div class="cta-rings"><div class="cta-ring cr1"></div><div class="cta-ring cr2"></div><div class="cta-ring cr3"></div></div>
+  <div class="cta-inner rv">
+    <div class="chip" style="margin-bottom:24px;justify-content:center;">Build securely</div>
+    <h2 class="h-xl" style="margin-bottom:28px;">Build your next<br>website with security<br>built in. <em>Let's do it.</em></h2>
+    <p class="body-t" style="max-width:440px;margin:0 auto 48px;">We build security-first websites that protect your data and your customers' data.</p>
+    <div style="display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;">
+      <a href="../../contact/" class="btn-v" style="font-size:13px;padding:15px 32px;">Start Your Project ↗</a>
+      <a href="../../website-development-company-thane/" class="btn-o">Web Development Services</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div><a href="../../" class="foot-logo"><div class="logo-mark"></div>Automora</a><p class="foot-desc">Full-service digital studio. Web design, AI automation, SEO — all under one roof. Built in Mumbai, for the world.</p><div class="foot-social"><a class="soc-btn" href="#" title="Instagram">ig</a><a class="soc-btn" href="#" title="LinkedIn">in</a><a class="soc-btn" href="#" title="Twitter">x</a><a class="soc-btn" href="#" title="WhatsApp">wa</a></div></div>
+      <div><div class="foot-col-h">Services</div><div class="foot-links"><a href="../../services/">Web Design</a><a href="../../services/">AI Chatbots</a><a href="../../services/">WhatsApp Bots</a><a href="../../services/">SEO</a><a href="../../services/">Digital Marketing</a></div></div>
+      <div><div class="foot-col-h">Company</div><div class="foot-links"><a href="../../about/">About Us</a><a href="../../case-studies/">Our Work</a><a href="../../contact/">Contact</a><a href="../../blog/">Blog</a></div></div>
+      <div><div class="foot-col-h">Connect</div><div class="foot-links"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Twitter / X</a><a href="#">WhatsApp</a></div></div>
+    </div>
+    <div class="foot-bottom"><div class="foot-copy">&copy; 2026 AUTOMORA TECH SOLUTIONS LLP. ALL RIGHTS RESERVED.</div><div class="foot-legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a></div></div>
+  </div>
+</footer>
+
+<script src="../../js/script.js"></script>
+<script>
+function toggleMob(){document.getElementById('hamBtn').classList.toggle('open');document.getElementById('mobMenu').classList.toggle('open');}
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',function(){const item=this.closest('.faq-item');const id=item.id;const wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!wasOpen)item.classList.add('open');});});
+  document.querySelectorAll('a,button,.blog-card,.faq-q,.bp-toc-list a').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));});
+});
+</script>
+</body>
+</html>

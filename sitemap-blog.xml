@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Web Development Cluster -->
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/cost-of-website-development-in-thane/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/website-development-process-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/custom-vs-template-websites/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/ecommerce-development-guide-thane/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/website-maintenance-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- AI Automation Cluster -->
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/what-is-ai-automation/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/ai-automation-for-small-businesses/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/whatsapp-automation-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/crm-automation-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/workflow-automation-examples/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- SEO Cluster -->
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/local-seo-for-businesses/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/seo-vs-google-ads/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/technical-seo-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/ai-search-optimization-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Cybersecurity Cluster -->
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/website-security-best-practices/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/cybersecurity-for-businesses/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automoratechsolutions.com/blog/secure-web-development-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

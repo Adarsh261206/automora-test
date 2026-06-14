@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <url>
+    <loc>https://www.automoratechsolutions.com/</loc>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/Logo.png</image:loc><image:title>Automora Tech Solutions Logo</image:title></image:image>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/Logo-white.png</image:loc><image:title>Automora Logo White</image:title></image:image>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/Adarsh.png</image:loc><image:title>Adarsh Sharma - Co-Founder & CTO Automora</image:title></image:image>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/Saurav.jpeg</image:loc><image:title>Saurav Singh - Co-Founder Automora</image:title></image:image>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/dcards.png</image:loc><image:title>Digital Cards Academy Project</image:title></image:image>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/trupti.png</image:loc><image:title>Trupti Enterprises Project</image:title></image:image>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/zealous.png</image:loc><image:title>Zealous Remedies Project</image:title></image:image>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/aastha.png</image:loc><image:title>Aastha Yoga Project</image:title></image:image>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/spfinsure.png</image:loc><image:title>SPF Insure Project</image:title></image:image>
+    <image:image><image:loc>https://www.automoratechsolutions.com/images/sadguru.png</image:loc><image:title>Shree Sadguru Dental Project</image:title></image:image>
+  </url>
+
+</urlset>

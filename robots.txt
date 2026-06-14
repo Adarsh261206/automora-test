@@ -6,16 +6,35 @@ Allow: /
 Allow: /images/
 Allow: /*.css
 Allow: /*.js
+Allow: /adarsh-sharma/
+Allow: /about/
+Allow: /services/
+Allow: /case-studies/
+Allow: /blog/
+Allow: /website-development-company-thane/
+Allow: /web-developer-thane/
+Allow: /software-company-thane/
+Allow: /ai-automation-company-thane/
+Allow: /seo-company-thane/
+Allow: /website-development-company-mumbai/
+Allow: /software-development-company-mumbai/
+Allow: /ai-automation-company-mumbai/
+Allow: /whatsapp-automation-services/
+Allow: /crm-automation-services/
+Allow: /business-automation-services/
 
-# Disallow admin or private areas (if any in future)
+# Disallow private or admin areas
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.json$
 
-# Sitemap location
+# Sitemaps
 Sitemap: https://www.automoratechsolutions.com/sitemap.xml
+Sitemap: https://www.automoratechsolutions.com/sitemap-pages.xml
+Sitemap: https://www.automoratechsolutions.com/sitemap-blog.xml
+Sitemap: https://www.automoratechsolutions.com/sitemap-images.xml
 
-# Crawl-delay (optional, helps prevent server overload)
+# Crawl-delay
 Crawl-delay: 1
 
 # Specific bot instructions
@@ -28,9 +47,24 @@ Allow: /images/
 User-agent: Bingbot
 Allow: /
 
-# Block bad bots
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Rate limit aggressive bots
 User-agent: AhrefsBot
 Crawl-delay: 10
 
 User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
 Crawl-delay: 10
