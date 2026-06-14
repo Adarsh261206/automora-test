@@ -228,43 +228,11 @@
 .ben-icon{font-size:24px;margin-bottom:12px;}
 .ben-t{font-size:13px;font-weight:700;color:var(--smoke);margin-bottom:6px;letter-spacing:-.01em;}
 .ben-d{font-size:12px;line-height:1.7;color:var(--fog);}
-.pricing-s{padding:100px 0;border-top:1px solid var(--wire);background:var(--ink2);}
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px;}
-.pricing-card{background:var(--ink);border:1px solid var(--wire);border-radius:20px;padding:48px 36px;position:relative;transition:border-color .3s,transform .3s;display:flex;flex-direction:column;}
-.pricing-card:hover{border-color:rgba(212,255,0,.3);transform:translateY(-8px);}
-.pricing-card.featured{background:var(--ink3);border-color:rgba(212,255,0,.2);}
-.pricing-card.featured .pricing-badge{display:inline-block;}
-.pricing-badge{display:none;position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--volt);color:var(--ink);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 18px;border-radius:100px;white-space:nowrap;}
-.pricing-name{font-family:var(--serif);font-size:22px;color:var(--smoke);margin-bottom:8px;letter-spacing:-.02em;}
-.pricing-desc{font-size:12px;line-height:1.7;color:var(--fog);margin-bottom:20px;}
-.pricing-amount{font-size:36px;font-family:var(--serif);color:var(--smoke);margin-bottom:4px;letter-spacing:-.03em;}
-.pricing-amount span{font-size:16px;color:var(--fog);font-family:var(--syne);}
-.pricing-note{font-size:10px;color:var(--ghost);margin-bottom:24px;font-family:var(--mono);}
-.pricing-feats{display:flex;flex-direction:column;gap:10px;margin-bottom:32px;flex:1;}
-.pf{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--fog);}
-.pf::before{content:'\u2713';color:var(--volt);font-weight:700;font-size:14px;}
-.proc-s{padding:100px 0;border-top:1px solid var(--wire);}
-.proc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--wire);margin-top:64px;}
-.proc-cell{background:var(--ink);padding:40px 28px;position:relative;transition:background .3s;}
-.proc-cell:hover{background:var(--ink2);}
-.proc-n{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--volt);margin-bottom:12px;}
-.proc-t{font-family:var(--serif);font-size:16px;color:var(--smoke);margin-bottom:8px;letter-spacing:-.02em;}
-.proc-d{font-size:12px;line-height:1.7;color:var(--fog);}
-.inline-cta{padding:80px 0;border-top:1px solid var(--wire);text-align:center;background:var(--ink2);}
-@media(max-width:1024px){
-  .content-grid{grid-template-columns:1fr;gap:40px;padding:0 24px;}
-  .features-grid{grid-template-columns:1fr 1fr;}
-  .comp-grid{grid-template-columns:1fr;}
-  .use-grid{grid-template-columns:1fr 1fr;}
-  .pricing-grid{grid-template-columns:1fr;}
-  .ben-grid{grid-template-columns:1fr 1fr;}
-  .proc-grid{grid-template-columns:1fr 1fr 1fr;}
-}
 @media(max-width:640px){
   .features-grid,.use-grid,.ben-grid,.pricing-grid,.proc-grid,.comp-grid{grid-template-columns:1fr;}
   .content-grid{padding:0 16px;}
   .breadcrumbs{font-size:9px;gap:8px;}
-  .pricing-card{padding:36px 24px;}
+  {padding:36px 24px;}
 }
 </style>
 </head>
@@ -505,61 +473,6 @@
     </div>
   </div>
 </section>
-<section class="pricing-s">
-  <div class="wrap">
-    <div class="section-header rv">
-      <div>
-        <div class="chip" style="margin-bottom:12px;">Pricing</div>
-        <h2 class="h-lg">Website development pricing <em>for Mumbai businesses.</em></h2>
-      </div>
-    </div>
-    <div class="pricing-grid rv d1">
-      <div class="pricing-card">
-        <div class="pricing-name">Starter Site</div>
-        <div class="pricing-desc">For startups and small businesses needing a professional 5-page website.</div>
-        <div class="pricing-amount">₹25K <span>starting</span></div>
-        <div class="pricing-note">One-time cost + hosting</div>
-        <div class="pricing-feats">
-          <div class="pf">5 custom pages</div>
-          <div class="pf">Responsive design</div>
-          <div class="pf">Contact form integration</div>
-          <div class="pf">Basic SEO setup</div>
-          <div class="pf">1 month support</div>
-        </div>
-        <a href="../contact/" class="btn-v" style="width:100%;justify-content:center;">Get Started ↗</a>
-      </div>
-      <div class="pricing-card featured">
-        <div class="pricing-badge">Most Popular</div>
-        <div class="pricing-name">Business Pro</div>
-        <div class="pricing-desc">For growing Mumbai businesses needing a full-featured website with CMS.</div>
-        <div class="pricing-amount">₹65K <span>starting</span></div>
-        <div class="pricing-note">One-time cost + hosting</div>
-        <div class="pricing-feats">
-          <div class="pf">Up to 15 pages</div>
-          <div class="pf">Custom CMS (Headless)</div>
-          <div class="pf">Blog integration</div>
-          <div class="pf">Advanced SEO optimisation</div>
-          <div class="pf">3 months support</div>
-        </div>
-        <a href="../contact/" class="btn-v" style="width:100%;justify-content:center;">Let's Build ↗</a>
-      </div>
-      <div class="pricing-card">
-        <div class="pricing-name">E-Commerce</div>
-        <div class="pricing-desc">For businesses wanting a fully-featured online store.</div>
-        <div class="pricing-amount">Custom</div>
-        <div class="pricing-note">Quoted based on requirements</div>
-        <div class="pricing-feats">
-          <div class="pf">Product catalogue & CMS</div>
-          <div class="pf">Payment gateway integration</div>
-          <div class="pf">Inventory management</div>
-          <div class="pf">Mobile app-ready API</div>
-          <div class="pf">Dedicated support team</div>
-        </div>
-        <a href="../contact/" class="btn-v" style="width:100%;justify-content:center;">Contact Us ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
 <section class="proc-s">
   <div class="wrap">
     <div class="section-header rv">
@@ -716,51 +629,48 @@
   <div class="foot-inner">
     <div class="foot-grid">
       <div>
-        <div class="foot-logo"><div class="logo-mark"></div>Automora</div>
-        <p class="foot-desc">Full-service digital studio based in Mumbai. Web design, AI automation, SEO — all under one roof.</p>
+        <a href="../" class="foot-logo"><div class="logo-mark"></div>Automora</a>
+        <p class="foot-desc">Full-service digital studio. Web design, AI automation, SEO — all under one roof. Built in Mumbai, for the world.</p>
         <div class="foot-social">
-          <a class="soc-btn" href="#" title="Instagram">ig</a>
-          <a class="soc-btn" href="#" title="LinkedIn">in</a>
-          <a class="soc-btn" href="#" title="Twitter">x</a>
-          <a class="soc-btn" href="#" title="WhatsApp">wa</a>
+          <a class="soc-btn" href="https://www.instagram.com/automora_tech/" title="Instagram" target="_blank" rel="noopener">ig</a>
+          <a class="soc-btn" href="https://www.linkedin.com/company/automora-tech-solutions/" title="LinkedIn" target="_blank" rel="noopener">in</a>
+          <a class="soc-btn" href="https://x.com/AutomoraTech" title="Twitter" target="_blank" rel="noopener">x</a>
+          <a class="soc-btn" href="https://wa.me/919819810460" title="WhatsApp" target="_blank" rel="noopener">wa</a>
         </div>
       </div>
       <div>
         <div class="foot-col-h">Services</div>
         <div class="foot-links">
-          <a href="../website-development-company-mumbai/">Web Development</a>
-          <a href="../software-development-company-mumbai/">Software Development</a>
-          <a href="../ai-automation-company-mumbai/">AI Automation</a>
+          <a href="../website-development-company-thane/">Web Design & Development</a>
+          <a href="../ai-automation-company-thane/">AI Chatbots & Automation</a>
           <a href="../whatsapp-automation-services/">WhatsApp Automation</a>
           <a href="../crm-automation-services/">CRM Automation</a>
           <a href="../business-automation-services/">Business Automation</a>
+          <a href="../seo-company-thane/">SEO & Digital Growth</a>
         </div>
       </div>
       <div>
         <div class="foot-col-h">Company</div>
         <div class="foot-links">
           <a href="../about/">About Us</a>
-          <a href="../adarsh-sharma/">Adarsh Sharma</a>
-          <a href="/#page-work">Our Work</a>
-          <a href="../contact/">Contact</a>
+          <a href="../adarsh-sharma/">Adarsh Sharma - CTO</a>
+          <a href="../case-studies/">Our Work</a>
           <a href="../blog/">Blog</a>
-          <a href="../case-studies/">Case Studies</a>
+          <a href="../contact/">Contact</a>
         </div>
       </div>
       <div>
-        <div class="foot-col-h">Locations</div>
+        <div class="foot-col-h">Connect</div>
         <div class="foot-links">
-          <a href="../website-development-company-mumbai/">Mumbai</a>
-          <a href="../ai-automation-company-mumbai/">AI Automation Mumbai</a>
-          <a href="../software-development-company-mumbai/">Software Mumbai</a>
-          <a href="../website-development-company-thane/">Web Dev Thane</a>
-          <a href="../software-company-thane/">Software Thane</a>
-          <a href="../ai-automation-company-thane/">AI Automation Thane</a>
+          <a href="https://www.instagram.com/automora_tech/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/automora-tech-solutions/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com/AutomoraTech" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://wa.me/919819810460" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
     </div>
     <div class="foot-bottom">
-      <div class="foot-copy">© 2026 AUTOMORA TECH SOLUTIONS LLP. ALL RIGHTS RESERVED.</div>
+      <div class="foot-copy">&copy; 2026 AUTOMORA TECH SOLUTIONS LLP. ALL RIGHTS RESERVED.</div>
       <div class="foot-legal">
         <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a>
       </div>
@@ -769,7 +679,7 @@
 </footer>
 <script src="../js/script.js"></script>
 <script>
-(function(){const dot=document.getElementById('c-dot'),ring=document.getElementById('c-ring');let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;if(dot&&ring){document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});(function raf(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(raf);})();document.querySelectorAll('a,button,.bc,.team-card,.pkg-card,.num-cell,.svc-card,.phi-card,.testi-card,.pstep,.faq-q,.feat-card,.comp-cell,.use-cell,.ben-cell,.pricing-card,.proc-cell').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));});}})();
+(function(){const dot=document.getElementById('c-dot'),ring=document.getElementById('c-ring');let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;if(dot&&ring){document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});(function raf(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(raf);})();document.querySelectorAll('a,button,.bc,.team-card,.num-cell,.svc-card,.phi-card,.testi-card,.pstep,.faq-q,.feat-card,.comp-cell,.use-cell,.ben-cell,,.proc-cell').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));});}})();
 function toggleMob(){document.getElementById('hamBtn').classList.toggle('open');document.getElementById('mobMenu').classList.toggle('open');}
 function closeMob(){document.getElementById('hamBtn').classList.remove('open');document.getElementById('mobMenu').classList.remove('open');}
 (function(){const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target);}});},{threshold:.06});document.querySelectorAll('.rv:not(.show)').forEach(el=>obs.observe(el));})();

@@ -272,92 +272,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:0 40px;height:72px;d
 .why-n{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--fog);margin-bottom:24px;position:relative;z-index:1;}
 .why-t{font-family:var(--serif);font-size:22px;color:var(--smoke);margin-bottom:12px;position:relative;z-index:1;letter-spacing:-.02em;}
 .why-d{font-size:13px;line-height:1.8;color:var(--fog);position:relative;z-index:1;}
-.pricing-s{padding:100px 0;border-top:1px solid var(--wire);}
-.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1440px;margin:48px auto 0;padding:0 48px;}
-.pkg-card{background:var(--ink2);border:1px solid var(--wire);border-radius:20px;padding:40px 36px;transition:border-color .3s,transform .35s;}
-.pkg-card:hover{border-color:var(--wire3);transform:translateY(-4px);}
-.pkg-card.featured{border-color:rgba(212,255,0,.3);position:relative;}
-.pkg-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--volt);color:#000;font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:6px 16px;border-radius:100px;white-space:nowrap;font-weight:600;}
-.pkg-name{font-family:var(--serif);font-size:28px;color:var(--smoke);margin-bottom:8px;letter-spacing:-.02em;}
-.pkg-price{font-size:32px;font-weight:800;color:var(--smoke);margin-bottom:12px;line-height:1;}
-.pkg-price span{font-size:14px;font-weight:400;color:var(--ghost);}
-.pkg-desc{font-size:13px;line-height:1.7;color:var(--fog);margin-bottom:24px;}
-.pkg-feats{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
-.pf{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--fog);}
-.pf-check{width:20px;height:20px;border-radius:50%;background:var(--volt-dim);color:var(--volt);display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0;}
-.process-alt-s{padding:100px 0;border-top:1px solid var(--wire);}
-.process-alt-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px;max-width:1440px;margin-left:auto;margin-right:auto;padding:0 48px;}
-.process-alt-step{background:var(--ink2);border:1px solid var(--wire);border-radius:16px;padding:28px 24px;text-align:center;transition:border-color .3s;}
-.process-alt-step:hover{border-color:var(--wire3);}
-.process-alt-step .step-n{font-family:var(--mono);font-size:28px;color:var(--volt);margin-bottom:8px;}
-.process-alt-step .step-t{font-size:13px;font-weight:700;color:var(--smoke);margin-bottom:6px;}
-.process-alt-step .step-d{font-size:11px;line-height:1.6;color:var(--fog);}
-.cta-inline{padding:80px 0;text-align:center;border-top:1px solid var(--wire);}
-.cta-inline .cta-inner{max-width:600px;margin:0 auto;}
-.conv-bar{position:fixed;bottom:0;left:0;right:0;z-index:800;background:var(--ink2);border-top:1px solid var(--wire);padding:12px 24px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;backdrop-filter:blur(16px);}
-.conv-bar .conv-phone{font-size:13px;color:var(--fog);font-weight:600;}
-.conv-bar .conv-phone a{color:var(--volt);text-decoration:none;}
-.conv-bar .conv-name{font-size:11px;color:var(--ghost);font-family:var(--mono);}
-.faq-s{padding:100px 0;border-top:1px solid var(--wire);}
-.faq-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start;max-width:1440px;margin:0 auto;padding:0 48px;}
-.faq-left{position:sticky;top:120px;}
-.faq-left-chip{margin-bottom:16px;}
-.faq-left-note{font-size:13px;line-height:1.8;color:var(--fog);margin-top:24px;max-width:280px;}
-.faq-left-cta{margin-top:32px;}
-.faq-grid{margin:0;}
-.faq-item{border-bottom:1px solid var(--wire);}
-.faq-item:first-child{border-top:1px solid var(--wire);}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:26px 0;cursor:pointer;gap:20px;}
-.faq-q-text{font-size:16px;font-weight:600;color:var(--smoke);line-height:1.4;}
-.faq-icon{width:32px;height:32px;border-radius:50%;border:1px solid var(--wire2);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--fog);flex-shrink:0;line-height:1;transition:transform .35s cubic-bezier(.23,1,.32,1),border-color .3s,color .3s,background .3s;}
-.faq-item.open .faq-icon{transform:rotate(45deg);border-color:rgba(212,255,0,.4);color:var(--volt);background:var(--volt-dim);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.23,1,.32,1);}
-.faq-item.open .faq-a{max-height:360px;}
-.faq-a-inner{padding-bottom:28px;font-size:14px;line-height:1.85;color:var(--fog);}
-.cta-s{padding:160px 0;text-align:center;position:relative;overflow:hidden;}
-.cta-glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:700px;height:700px;border-radius:50%;background:radial-gradient(ellipse,rgba(212,255,0,.07) 0%,transparent 65%);pointer-events:none;}
-.cta-rings{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;}
-.cta-ring{position:absolute;border-radius:50%;border:1px solid var(--wire);transform:translate(-50%,-50%);}
-.cr1{width:280px;height:280px;animation:rotateSlow 25s linear infinite;}
-.cr2{width:480px;height:480px;animation:rotateSlow 40s linear infinite reverse;}
-.cr3{width:680px;height:680px;animation:rotateSlow 60s linear infinite;}
-.cta-ring::before{content:'';position:absolute;top:-4px;left:50%;width:8px;height:8px;border-radius:50%;background:var(--volt);transform:translateX(-50%);box-shadow:0 0 12px var(--volt);}
-@keyframes rotateSlow{to{transform:translate(-50%,-50%) rotate(360deg);}}
-.cta-inner{position:relative;z-index:2;}
-footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40px;}
-.foot-inner{max-width:1440px;margin:0 auto;padding:0 48px;}
-.foot-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:60px;padding-bottom:60px;margin-bottom:40px;border-bottom:1px solid var(--wire);}
-.foot-logo{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800;margin-bottom:16px;}
-.foot-desc{font-size:13px;line-height:1.8;color:var(--fog);max-width:260px;margin-bottom:24px;}
-.foot-social{display:flex;gap:10px;}
-.soc-btn{width:34px;height:34px;border-radius:8px;border:1px solid var(--wire2);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--fog);transition:border-color .2s,color .2s,background .2s;text-decoration:none;}
-.soc-btn:hover{border-color:var(--volt);color:var(--volt);background:var(--volt-dim);}
-.foot-col-h{font-family:var(--mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--fog);margin-bottom:20px;}
-.foot-links{display:flex;flex-direction:column;gap:11px;}
-.foot-links a{font-size:13px;color:var(--fog);transition:color .2s;text-decoration:none;}
-.foot-links a:hover{color:var(--smoke);}
-.foot-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
-.foot-copy{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--fog);}
-.foot-legal{display:flex;gap:24px;}
-.foot-legal a{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--fog);transition:color .2s;text-decoration:none;}
-.foot-legal a:hover{color:var(--smoke);}
-@media(max-width:1024px){
-  nav{padding:0 24px;height:64px;}
-  .nav-pills{display:none;}
-  .ham{display:flex !important;}
-  .nav-cta{display:none;}
-  .logo-img{height:36px;}
-  .wrap,.pg-hero,.foot-inner{padding-left:24px;padding-right:24px;}
-  .pg-hero-grid,.faq-layout,.content-grid{grid-template-columns:1fr;}
-  .foot-grid{grid-template-columns:1fr 1fr;}
-  .faq-layout{grid-template-columns:1fr;gap:40px;padding:0 24px;}
-  .faq-left{position:static;}
-  .why-grid{grid-template-columns:1fr 1fr;}
-  .tech-grid{grid-template-columns:1fr 1fr;}
-  .port-grid{grid-template-columns:1fr 1fr;}
-  .mob-menu{top:64px;}
-  .pkg-grid,.process-alt-grid{padding:0 24px;grid-template-columns:1fr;}
-}
 @media(max-width:640px){
   nav{padding:0 16px;height:60px;}
   .logo-img{height:32px;}
@@ -374,7 +288,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .foot-legal{gap:12px;}
   .foot-legal a{font-size:9px;}
   .mob-menu{top:60px;}
-  .pkg-grid,.process-alt-grid{padding:0 16px;}
+  .process-alt-grid{padding:0 16px;}
   .conv-bar{padding:10px 16px;flex-direction:column;gap:8px;}
 }
 </style>
@@ -630,58 +544,6 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
     </div>
   </div>
 </section>
-<section class="pricing-s">
-  <div class="wrap">
-    <div class="section-header rv">
-      <div>
-        <div class="chip" style="margin-bottom:12px;">Pricing</div>
-        <h2 class="h-lg">Web development <em>packages.</em></h2>
-      </div>
-    </div>
-  </div>
-  <div class="pkg-grid rv d1">
-    <div class="pkg-card">
-      <div class="pkg-name">Basic</div>
-      <div class="pkg-price">₹25,000<span>/project</span></div>
-      <div class="pkg-desc">Perfect for Thane startups needing a clean, professional web presence.</div>
-      <div class="pkg-feats">
-        <div class="pf"><div class="pf-check">✓</div>5-Page Responsive Site</div>
-        <div class="pf"><div class="pf-check">✓</div>Mobile-First Design</div>
-        <div class="pf"><div class="pf-check">✓</div>Basic SEO</div>
-        <div class="pf"><div class="pf-check">✓</div>Contact Form</div>
-        <div class="pf"><div class="pf-check">✓</div>1 Month Support</div>
-      </div>
-      <a href="../contact" class="btn-v" style="width:100%;justify-content:center;">Get Started ↗</a>
-    </div>
-    <div class="pkg-card featured">
-      <div class="pkg-badge">✦ Most Popular</div>
-      <div class="pkg-name">Professional</div>
-      <div class="pkg-price">₹55,000<span>/project</span></div>
-      <div class="pkg-desc">For Thane businesses ready to scale with a custom website and advanced features.</div>
-      <div class="pkg-feats">
-        <div class="pf"><div class="pf-check">✓</div>10-Page Website</div>
-        <div class="pf"><div class="pf-check">✓</div>Custom UI/UX</div>
-        <div class="pf"><div class="pf-check">✓</div>CMS Integration</div>
-        <div class="pf"><div class="pf-check">✓</div>Advanced SEO</div>
-        <div class="pf"><div class="pf-check">✓</div>3 Months Support</div>
-      </div>
-      <a href="../contact" class="btn-v" style="width:100%;justify-content:center;">Get Started ↗</a>
-    </div>
-    <div class="pkg-card">
-      <div class="pkg-name">Custom</div>
-      <div class="pkg-price">Custom<span> / project</span></div>
-      <div class="pkg-desc">Full-scale web applications and platforms for Thane enterprises.</div>
-      <div class="pkg-feats">
-        <div class="pf"><div class="pf-check">✓</div>Custom Web App</div>
-        <div class="pf"><div class="pf-check">✓</div>Full Stack Development</div>
-        <div class="pf"><div class="pf-check">✓</div>API Integrations</div>
-        <div class="pf"><div class="pf-check">✓</div>Dedicated Developer</div>
-        <div class="pf"><div class="pf-check">✓</div>12 Months Support</div>
-      </div>
-      <a href="../contact" class="btn-v" style="width:100%;justify-content:center;">Get Started ↗</a>
-    </div>
-  </div>
-</section>
 <section class="process-alt-s">
   <div class="wrap">
     <div class="section-header rv">
@@ -883,7 +745,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   <div class="foot-inner">
     <div class="foot-grid">
       <div>
-        <div class="foot-logo"><div class="logo-mark"></div>Automora</div>
+        <a href="../" class="foot-logo"><div class="logo-mark"></div>Automora</a>
         <p class="foot-desc">Full-service digital studio. Web design, AI automation, SEO — all under one roof. Built in Mumbai, for the world.</p>
         <div class="foot-social">
           <a class="soc-btn" href="https://www.instagram.com/automora_tech/" title="Instagram" target="_blank" rel="noopener">ig</a>
@@ -895,21 +757,22 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
       <div>
         <div class="foot-col-h">Services</div>
         <div class="foot-links">
-          <a href="../website-development-company-thane/">Web Design</a>
-          <a href="../ai-automation-company-thane/">AI Chatbots</a>
-          <a href="../whatsapp-automation-services/">WhatsApp Bots</a>
-          <a href="../seo-company-thane/">SEO</a>
-          <a href="../services/">Digital Marketing</a>
+          <a href="../website-development-company-thane/">Web Design & Development</a>
+          <a href="../ai-automation-company-thane/">AI Chatbots & Automation</a>
+          <a href="../whatsapp-automation-services/">WhatsApp Automation</a>
+          <a href="../crm-automation-services/">CRM Automation</a>
+          <a href="../business-automation-services/">Business Automation</a>
+          <a href="../seo-company-thane/">SEO & Digital Growth</a>
         </div>
       </div>
       <div>
         <div class="foot-col-h">Company</div>
         <div class="foot-links">
-          <a href="../about">About Us</a>
-          <a href="../adarsh-sharma/">Adarsh Sharma</a>
-          <a href="/#page-work">Our Work</a>
-          <a href="../contact">Contact</a>
-          <a href="../blog">Blog</a>
+          <a href="../about/">About Us</a>
+          <a href="../adarsh-sharma/">Adarsh Sharma - CTO</a>
+          <a href="../case-studies/">Our Work</a>
+          <a href="../blog/">Blog</a>
+          <a href="../contact/">Contact</a>
         </div>
       </div>
       <div>
@@ -923,7 +786,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
       </div>
     </div>
     <div class="foot-bottom">
-      <div class="foot-copy">© 2026 AUTOMORA TECH SOLUTIONS LLP. ALL RIGHTS RESERVED.</div>
+      <div class="foot-copy">&copy; 2026 AUTOMORA TECH SOLUTIONS LLP. ALL RIGHTS RESERVED.</div>
       <div class="foot-legal">
         <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a>
       </div>

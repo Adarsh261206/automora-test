@@ -261,94 +261,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:0 40px;height:72px;d
 .ben-icon{font-size:24px;margin-bottom:12px;}
 .ben-t{font-size:13px;font-weight:700;color:var(--smoke);margin-bottom:6px;letter-spacing:-.01em;}
 .ben-d{font-size:12px;line-height:1.7;color:var(--fog);}
-.pricing-s{padding:100px 0;border-top:1px solid var(--wire);background:var(--ink2);}
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px;}
-.pricing-card{background:var(--ink);border:1px solid var(--wire);border-radius:20px;padding:48px 36px;position:relative;transition:border-color .3s,transform .3s;display:flex;flex-direction:column;}
-.pricing-card:hover{border-color:rgba(212,255,0,.3);transform:translateY(-8px);}
-.pricing-card.featured{background:var(--ink3);border-color:rgba(212,255,0,.2);}
-.pricing-card.featured .pricing-badge{display:inline-block;}
-.pricing-badge{display:none;position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--volt);color:var(--ink);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 18px;border-radius:100px;white-space:nowrap;}
-.pricing-name{font-family:var(--serif);font-size:22px;color:var(--smoke);margin-bottom:8px;letter-spacing:-.02em;}
-.pricing-desc{font-size:12px;line-height:1.7;color:var(--fog);margin-bottom:20px;}
-.pricing-amount{font-size:36px;font-family:var(--serif);color:var(--smoke);margin-bottom:4px;letter-spacing:-.03em;}
-.pricing-amount span{font-size:16px;color:var(--fog);font-family:var(--syne);}
-.pricing-note{font-size:10px;color:var(--ghost);margin-bottom:24px;font-family:var(--mono);}
-.pricing-feats{display:flex;flex-direction:column;gap:10px;margin-bottom:32px;flex:1;}
-.pf{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--fog);}
-.pf::before{content:'\u2713';color:var(--volt);font-weight:700;font-size:14px;}
-.proc-s{padding:100px 0;border-top:1px solid var(--wire);}
-.proc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--wire);margin-top:64px;}
-.proc-cell{background:var(--ink);padding:40px 28px;position:relative;transition:background .3s;}
-.proc-cell:hover{background:var(--ink2);}
-.proc-n{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--volt);margin-bottom:12px;}
-.proc-t{font-family:var(--serif);font-size:16px;color:var(--smoke);margin-bottom:8px;letter-spacing:-.02em;}
-.proc-d{font-size:12px;line-height:1.7;color:var(--fog);}
-.inline-cta{padding:80px 0;border-top:1px solid var(--wire);text-align:center;background:var(--ink2);}
-.faq-s{padding:100px 0;border-top:1px solid var(--wire);}
-.faq-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start;max-width:1440px;margin:0 auto;padding:0 48px;}
-.faq-left{position:sticky;top:120px;}
-.faq-left-chip{margin-bottom:16px;}
-.faq-left-note{font-size:13px;line-height:1.8;color:var(--fog);margin-top:24px;max-width:280px;}
-.faq-left-cta{margin-top:32px;}
-.faq-grid{margin:0;}
-.faq-item{border-bottom:1px solid var(--wire);}
-.faq-item:first-child{border-top:1px solid var(--wire);}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:26px 0;cursor:pointer;gap:20px;}
-.faq-q-text{font-size:16px;font-weight:600;color:var(--smoke);line-height:1.4;}
-.faq-icon{width:32px;height:32px;border-radius:50%;border:1px solid var(--wire2);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--fog);flex-shrink:0;line-height:1;transition:transform .35s cubic-bezier(.23,1,.32,1),border-color .3s,color .3s,background .3s;}
-.faq-item.open .faq-icon{transform:rotate(45deg);border-color:rgba(212,255,0,.4);color:var(--volt);background:var(--volt-dim);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.23,1,.32,1);}
-.faq-item.open .faq-a{max-height:360px;}
-.faq-a-inner{padding-bottom:28px;font-size:14px;line-height:1.85;color:var(--fog);}
-.cta-s{padding:160px 0;text-align:center;position:relative;overflow:hidden;}
-.cta-glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:700px;height:700px;border-radius:50%;background:radial-gradient(ellipse,rgba(212,255,0,.07) 0%,transparent 65%);pointer-events:none;}
-.cta-rings{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;}
-.cta-ring{position:absolute;border-radius:50%;border:1px solid var(--wire);transform:translate(-50%,-50%);}
-.cr1{width:280px;height:280px;animation:rotateSlow 25s linear infinite;}
-.cr2{width:480px;height:480px;animation:rotateSlow 40s linear infinite reverse;}
-.cr3{width:680px;height:680px;animation:rotateSlow 60s linear infinite;}
-.cta-ring::before{content:'';position:absolute;top:-4px;left:50%;width:8px;height:8px;border-radius:50%;background:var(--volt);transform:translateX(-50%);box-shadow:0 0 12px var(--volt);}
-@keyframes rotateSlow{to{transform:translate(-50%,-50%) rotate(360deg);}}
-.cta-inner{position:relative;z-index:2;}
-footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40px;}
-.foot-inner{max-width:1440px;margin:0 auto;padding:0 48px;}
-.foot-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:60px;padding-bottom:60px;margin-bottom:40px;border-bottom:1px solid var(--wire);}
-.foot-logo{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800;margin-bottom:16px;}
-.foot-desc{font-size:13px;line-height:1.8;color:var(--fog);max-width:260px;margin-bottom:24px;}
-.foot-social{display:flex;gap:10px;}
-.soc-btn{width:34px;height:34px;border-radius:8px;border:1px solid var(--wire2);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--fog);transition:border-color .2s,color .2s,background .2s;text-decoration:none;}
-.soc-btn:hover{border-color:var(--volt);color:var(--volt);background:var(--volt-dim);}
-.foot-col-h{font-family:var(--mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--fog);margin-bottom:20px;}
-.foot-links{display:flex;flex-direction:column;gap:11px;}
-.foot-links a{font-size:13px;color:var(--fog);transition:color .2s;text-decoration:none;}
-.foot-links a:hover{color:var(--smoke);}
-.foot-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
-.foot-copy{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--fog);}
-.foot-legal{display:flex;gap:24px;}
-.foot-legal a{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--fog);transition:color .2s;text-decoration:none;}
-.foot-legal a:hover{color:var(--smoke);}
-@media(max-width:1024px){
-  nav{padding:0 24px;height:64px;}
-  .nav-pills{display:none;}
-  .ham{display:flex !important;}
-  .nav-cta{display:none;}
-  .logo-img{height:36px;}
-  .wrap,.pg-hero,.foot-inner{padding-left:24px;padding-right:24px;}
-  .pg-hero-grid,.faq-layout,.content-grid,.comp-grid{grid-template-columns:1fr;}
-  .svc-cards-grid,.use-grid{grid-template-columns:1fr 1fr;}
-  .pricing-grid{grid-template-columns:1fr;}
-  .ben-grid{grid-template-columns:1fr 1fr;}
-  .proc-grid{grid-template-columns:1fr 1fr 1fr;}
-  .svc-card:nth-child(even){border-right:1px solid var(--wire);}
-  .svc-card:nth-last-child(-n+2){border-bottom:1px solid var(--wire);}
-  .svc-card:last-child{border-bottom:none !important;}
-  .foot-grid{grid-template-columns:1fr 1fr;}
-  .faq-layout{grid-template-columns:1fr;gap:40px;padding:0 24px;}
-  .faq-left{position:static;}
-  .why-grid{grid-template-columns:1fr 1fr;}
-  .stats-grid{grid-template-columns:1fr 1fr;}
-  .mob-menu{top:64px;}
-}
 @media(max-width:640px){
   nav{padding:0 16px;height:60px;}
   .logo-img{height:32px;}
@@ -820,61 +732,6 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
     </div>
   </div>
 </section>
-<section class="pricing-s">
-  <div class="wrap">
-    <div class="section-header rv">
-      <div>
-        <div class="chip" style="margin-bottom:12px;">Pricing</div>
-        <h2 class="h-lg">Flexible SEO packages <em>for Thane businesses.</em></h2>
-      </div>
-    </div>
-    <div class="pricing-grid rv d1">
-      <div class="pricing-card">
-        <div class="pricing-name">Local SEO Starter</div>
-        <div class="pricing-desc">For small Thane businesses needing local search visibility and GBP optimisation.</div>
-        <div class="pricing-amount">₹12K <span>/month</span></div>
-        <div class="pricing-note">Month-to-month or 6-month commit</div>
-        <div class="pricing-feats">
-          <div class="pf">Google Business Profile optimisation</div>
-          <div class="pf">Local citation building (20+ sites)</div>
-          <div class="pf">5 local keywords targeting</div>
-          <div class="pf">Monthly performance report</div>
-          <div class="pf">Review management & monitoring</div>
-        </div>
-        <a href="../contact" class="btn-v" style="width:100%;justify-content:center;">Get Started ↗</a>
-      </div>
-      <div class="pricing-card featured">
-        <div class="pricing-badge">Most Popular</div>
-        <div class="pricing-name">Growth SEO</div>
-        <div class="pricing-desc">For growing Thane businesses wanting comprehensive SEO across local and organic.</div>
-        <div class="pricing-amount">₹25K <span>/month</span></div>
-        <div class="pricing-note">6-month commitment recommended</div>
-        <div class="pricing-feats">
-          <div class="pf">Everything in Starter plus</div>
-          <div class="pf">Technical SEO audit & fixes</div>
-          <div class="pf">15 keyword target expansion</div>
-          <div class="pf">Monthly blog content (2 posts)</div>
-          <div class="pf">Competitor analysis & gap audit</div>
-        </div>
-        <a href="../contact" class="btn-v" style="width:100%;justify-content:center;">Let's Rank ↗</a>
-      </div>
-      <div class="pricing-card">
-        <div class="pricing-name">Enterprise SEO</div>
-        <div class="pricing-desc">For large Thane organisations needing aggressive link building and authority growth.</div>
-        <div class="pricing-amount">Custom</div>
-        <div class="pricing-note">Tailored to your goals</div>
-        <div class="pricing-feats">
-          <div class="pf">Everything in Growth plus</div>
-          <div class="pf">Link building (10+ high-authority)</div>
-          <div class="pf">Content strategy & pillar pages</div>
-          <div class="pf">Digital PR & brand mentions</div>
-          <div class="pf">Dedicated account manager</div>
-        </div>
-        <a href="../contact" class="btn-v" style="width:100%;justify-content:center;">Contact Us ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
 <section class="proc-s">
   <div class="wrap">
     <div class="section-header rv">
@@ -1031,7 +888,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   <div class="foot-inner">
     <div class="foot-grid">
       <div>
-        <div class="foot-logo"><div class="logo-mark"></div>Automora</div>
+        <a href="../" class="foot-logo"><div class="logo-mark"></div>Automora</a>
         <p class="foot-desc">Full-service digital studio. Web design, AI automation, SEO — all under one roof. Built in Mumbai, for the world.</p>
         <div class="foot-social">
           <a class="soc-btn" href="https://www.instagram.com/automora_tech/" title="Instagram" target="_blank" rel="noopener">ig</a>
@@ -1043,39 +900,36 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
       <div>
         <div class="foot-col-h">Services</div>
         <div class="foot-links">
-          <a href="../services">Web Design</a>
-          <a href="../services">AI Chatbots</a>
-          <a href="../whatsapp-automation-services">WhatsApp Bots</a>
-          <a href="../seo-company-thane">SEO</a>
-          <a href="../business-automation-services">Business Automation</a>
-          <a href="../crm-automation-services">CRM Automation</a>
+          <a href="../website-development-company-thane/">Web Design & Development</a>
+          <a href="../ai-automation-company-thane/">AI Chatbots & Automation</a>
+          <a href="../whatsapp-automation-services/">WhatsApp Automation</a>
+          <a href="../crm-automation-services/">CRM Automation</a>
+          <a href="../business-automation-services/">Business Automation</a>
+          <a href="../seo-company-thane/">SEO & Digital Growth</a>
         </div>
       </div>
       <div>
         <div class="foot-col-h">Company</div>
         <div class="foot-links">
-          <a href="../about">About Us</a>
-          <a href="../adarsh-sharma">Adarsh Sharma</a>
-          <a href="/#page-work">Our Work</a>
-          <a href="../contact">Contact</a>
-          <a href="../blog">Blog</a>
-          <a href="../case-studies">Case Studies</a>
+          <a href="../about/">About Us</a>
+          <a href="../adarsh-sharma/">Adarsh Sharma - CTO</a>
+          <a href="../case-studies/">Our Work</a>
+          <a href="../blog/">Blog</a>
+          <a href="../contact/">Contact</a>
         </div>
       </div>
       <div>
-        <div class="foot-col-h">Locations</div>
+        <div class="foot-col-h">Connect</div>
         <div class="foot-links">
-          <a href="../website-development-company-thane">Web Development Thane</a>
-          <a href="../software-company-thane">Software Thane</a>
-          <a href="../ai-automation-company-thane">AI Automation Thane</a>
-          <a href="../website-development-company-mumbai">Web Development Mumbai</a>
-          <a href="../software-development-company-mumbai">Software Mumbai</a>
-          <a href="../ai-automation-company-mumbai">AI Automation Mumbai</a>
+          <a href="https://www.instagram.com/automora_tech/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/automora-tech-solutions/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com/AutomoraTech" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://wa.me/919819810460" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
     </div>
     <div class="foot-bottom">
-      <div class="foot-copy">© 2026 AUTOMORA TECH SOLUTIONS LLP. ALL RIGHTS RESERVED.</div>
+      <div class="foot-copy">&copy; 2026 AUTOMORA TECH SOLUTIONS LLP. ALL RIGHTS RESERVED.</div>
       <div class="foot-legal">
         <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a>
       </div>
