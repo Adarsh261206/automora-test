@@ -26,9 +26,9 @@
 <meta name="twitter:title" content="Cost of Website Development in Thane 2026 | Automora Tech Solutions">
 <meta name="twitter:description" content="Detailed breakdown of website development costs in Thane for 2026. Compare pricing for basic sites, e-commerce, and custom web applications.">
 <meta name="twitter:image" content="https://www.automoratechsolutions.com/images/Logo.png">
-<link rel="icon" type="image/png" href="../../images/Logo copy.png">
-<link rel="apple-touch-icon" href="../../images/Logo copy.png">
-<link rel="shortcut icon" type="image/png" href="../../images/Logo copy.png">
+<link rel="icon" type="image/png" href="../../images/logo-copy.png">
+<link rel="apple-touch-icon" href="../../images/logo-copy.png">
+<link rel="shortcut icon" type="image/png" href="../../images/logo-copy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -164,7 +164,7 @@
       <a href="../../services/" class="np">Services</a>
       <a href="../../case-studies/" class="np">Work</a>
       <a href="../../about/" class="np">About</a>
-      <a href="../../blog/" class="np">Blog</a><a href="../../contact/" class="np">Contact</a>
+      <a href="../../blog/" class="np on">Blog</a><a href="../../contact/" class="np">Contact</a>
     </div>
   </div>
   <div class="nav-right">
@@ -173,7 +173,7 @@
       <span class="theme-icon-light">☀</span>
     </button>
     <a href="../../contact/" class="nav-cta">Start a Project ↗</a>
-    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;">
+    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -376,24 +376,8 @@
 
 <script src="../../js/script.js"></script>
 <script>
-function toggleMob(){
-  document.getElementById('hamBtn').classList.toggle('open');
-  document.getElementById('mobMenu').classList.toggle('open');
-}
 document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('.faq-q').forEach(q=>{
-    q.addEventListener('click',function(){
-      const item=this.closest('.faq-item');
-      const id=item.id;
-      const wasOpen=item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-      if(!wasOpen)item.classList.add('open');
-    });
-  });
-  document.querySelectorAll('a,button,.blog-card,.faq-q,.bp-toc-list a').forEach(el=>{
-    el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));
-    el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));
-  });
+  document.querySelectorAll('a,button,.blog-card,.faq-q,.bp-toc-list a').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));});
 });
 </script>
 </body>

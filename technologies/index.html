@@ -10,20 +10,20 @@
 <meta name="keywords" content="technology stack, web development technologies, AI automation tools, React, Next.js, Node.js, TypeScript, Python, GPT-4, LangChain, AWS, MongoDB, tech stack agency Mumbai, development tools Thane">
 <meta name="author" content="Automora Tech Solutions LLP">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="https://www.automoratechsolutions.com/technologies">
+<link rel="canonical" href="https://www.automoratechsolutions.com/technologies/">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.automoratechsolutions.com/technologies">
+<meta property="og:url" content="https://www.automoratechsolutions.com/technologies/">
 <meta property="og:title" content="Technology Stack - Tools & Technologies We Use | Automora">
 <meta property="og:description" content="Explore Automora's full technology stack including frontend, backend, AI/ML, cloud, and design tools.">
 <meta property="og:image" content="https://www.automoratechsolutions.com/images/Logo.png">
 <meta property="og:site_name" content="Automora Tech Solutions">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://www.automoratechsolutions.com/technologies">
+<meta name="twitter:url" content="https://www.automoratechsolutions.com/technologies/">
 <meta name="twitter:title" content="Technology Stack - Tools & Technologies We Use">
 <meta name="twitter:description" content="Full technology stack used by Automora for web development and AI automation.">
-<link rel="icon" type="image/png" href="../images/Logo copy.png">
-<link rel="apple-touch-icon" href="../images/Logo copy.png">
-<link rel="shortcut icon" type="image/png" href="../images/Logo copy.png">
+<link rel="icon" type="image/png" href="../images/logo-copy.png">
+<link rel="apple-touch-icon" href="../images/logo-copy.png">
+<link rel="shortcut icon" type="image/png" href="../images/logo-copy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -98,7 +98,7 @@
 </script>
 <style>
 .page{display:block;}
-.nav-blur{background:rgba(8,8,10,.95);}
+.nav-blur{background:var(--nav-bg);}
 .pg-hero{min-height:42vh;}
 .tech-category-s{padding:80px 0;border-top:1px solid var(--wire);}
 .tech-category-s:first-of-type{border-top:none;padding-top:60px;}
@@ -131,6 +131,7 @@
   .tech-stats-grid{grid-template-columns:1fr;}
   .tech-card{padding:24px 20px;}
   .tech-stat{padding:32px 24px;}
+  .foot-grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -162,7 +163,7 @@
       <span class="theme-icon-light">☀</span>
     </button>
     <a href="../contact/" class="nav-cta">Start a Project ↗</a>
-    <button class="ham" id="hamBtn" onclick="toggleMob()" aria-label="Menu">
+    <button class="ham" id="hamBtn" onclick="toggleMob()" aria-label="Menu" style="margin-left:16px;">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -433,20 +434,7 @@
 
 <script src="../js/script.js"></script>
 <script>
-function toggleMob(){
-  document.getElementById('hamBtn').classList.toggle('open');
-  document.getElementById('mobMenu').classList.toggle('open');
-}
 document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('.faq-q').forEach(q=>{
-    q.addEventListener('click',function(){
-      const item=this.closest('.faq-item');
-      const id=item.id;
-      const wasOpen=item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-      if(!wasOpen)item.classList.add('open');
-    });
-  });
   document.querySelectorAll('a,button,.tech-card,.faq-q').forEach(el=>{
     el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));
     el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));

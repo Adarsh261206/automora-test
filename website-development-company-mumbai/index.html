@@ -10,22 +10,22 @@
 <meta name="author" content="Automora Tech Solutions LLP">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
-<link rel="canonical" href="https://www.automoratechsolutions.com/website-development-company-mumbai">
+<link rel="canonical" href="https://www.automoratechsolutions.com/website-development-company-mumbai/">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.automoratechsolutions.com/website-development-company-mumbai">
+<meta property="og:url" content="https://www.automoratechsolutions.com/website-development-company-mumbai/">
 <meta property="og:title" content="Website Development Company Mumbai - Automora Tech Solutions">
 <meta property="og:description" content="Automora Tech Solutions — a leading website development company in Mumbai. Custom websites, web apps, e-commerce, and 3D experiences.">
 <meta property="og:image" content="https://www.automoratechsolutions.com/images/Logo.png">
 <meta property="og:site_name" content="Automora Tech Solutions">
 <meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://www.automoratechsolutions.com/website-development-company-mumbai">
+<meta name="twitter:url" content="https://www.automoratechsolutions.com/website-development-company-mumbai/">
 <meta name="twitter:title" content="Website Development Company Mumbai - Automora Tech Solutions">
 <meta name="twitter:description" content="Automora Tech Solutions — a leading website development company in Mumbai. Custom websites, web apps, e-commerce, and 3D experiences.">
 <meta name="twitter:image" content="https://www.automoratechsolutions.com/images/Logo.png">
-<link rel="icon" type="image/png" href="../images/Logo copy.png">
-<link rel="apple-touch-icon" href="../images/Logo copy.png">
-<link rel="shortcut icon" type="image/png" href="../images/Logo copy.png">
+<link rel="icon" type="image/png" href="../images/logo-copy.png">
+<link rel="apple-touch-icon" href="../images/logo-copy.png">
+<link rel="shortcut icon" type="image/png" href="../images/logo-copy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -207,7 +207,7 @@
 .feat-desc{font-size:13px;line-height:1.8;color:var(--fog);}
 .feat-num{position:absolute;bottom:16px;right:24px;font-family:var(--serif);font-size:72px;font-style:italic;color:rgba(255,255,255,0.02);line-height:1;}
 .comp-s{padding:100px 0;border-top:1px solid var(--wire);background:var(--ink2);}
-.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--wire);max-width:960px;margin:64px auto 0;}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--wire);max-width:1440px;margin:64px auto 0;}
 .comp-cell{background:var(--ink2);padding:48px 40px;text-align:center;}
 .comp-cell:first-child{background:var(--ink3);}
 .comp-icon{font-size:36px;margin-bottom:16px;}
@@ -228,11 +228,19 @@
 .ben-icon{font-size:24px;margin-bottom:12px;}
 .ben-t{font-size:13px;font-weight:700;color:var(--smoke);margin-bottom:6px;letter-spacing:-.01em;}
 .ben-d{font-size:12px;line-height:1.7;color:var(--fog);}
+@media(max-width:1024px){
+  .features-grid,.use-grid{grid-template-columns:1fr 1fr;}
+  .ben-grid{grid-template-columns:1fr 1fr;}
+  .content-grid{grid-template-columns:1fr;gap:40px;}
+}
 @media(max-width:640px){
   .features-grid,.use-grid,.ben-grid,.pricing-grid,.proc-grid,.comp-grid{grid-template-columns:1fr;}
   .content-grid{padding:0 16px;}
   .breadcrumbs{font-size:9px;gap:8px;}
-  {padding:36px 24px;}
+  .feat-card,.use-cell,.ben-cell{padding:36px 24px;}
+
+  .content-grid{gap:24px;}
+  .foot-grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -263,7 +271,7 @@
       <span class="theme-icon-light">☀</span>
     </button>
     <a href="../contact/" class="nav-cta">Start a Project ↗</a>
-    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;">
+    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -679,12 +687,12 @@
 </footer>
 <script src="../js/script.js"></script>
 <script>
-(function(){const dot=document.getElementById('c-dot'),ring=document.getElementById('c-ring');let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;if(dot&&ring){document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});(function raf(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(raf);})();document.querySelectorAll('a,button,.bc,.team-card,.num-cell,.svc-card,.phi-card,.testi-card,.pstep,.faq-q,.feat-card,.comp-cell,.use-cell,.ben-cell,.proc-cell').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));});}})();
-function toggleMob(){document.getElementById('hamBtn').classList.toggle('open');document.getElementById('mobMenu').classList.toggle('open');}
-function closeMob(){document.getElementById('hamBtn').classList.remove('open');document.getElementById('mobMenu').classList.remove('open');}
+(function(){const dot=document.getElementById('c-dot'),ring=document.getElementById('c-ring');let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;if(dot&&ring){document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});(function raf(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(raf);})();document.querySelectorAll('a,button,.bc,.team-card,.num-cell,.svc-card,.phi-card,.testi-card,.pstep,.faq-q,.feat-card,.comp-cell,.use-cell,.ben-cell,.proc-cell').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));});}
+})();
+/* toggleMob handled by js/script.js */
 (function(){const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target);}});},{threshold:.06});document.querySelectorAll('.rv:not(.show)').forEach(el=>obs.observe(el));})();
 function toggleFaq(id){const el=document.getElementById(id),wasOpen=el.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!wasOpen)el.classList.add('open');}
-document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',function(){const item=this.closest('.faq-item');const id=item.id;toggleFaq(id);});});});
+/* FAQ binding handled by js/script.js */
 function toggleTheme(){const html=document.documentElement;const current=html.getAttribute('data-theme');const next=current==='light'?'dark':'light';if(next==='dark'){html.removeAttribute('data-theme');}else{html.setAttribute('data-theme','light');}localStorage.setItem('automora-theme',next);}
 (function(){const saved=localStorage.getItem('automora-theme');if(saved==='light')document.documentElement.setAttribute('data-theme','light');})();
 </script>

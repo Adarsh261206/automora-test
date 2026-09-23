@@ -22,9 +22,9 @@
 <meta name="twitter:title" content="SEO vs Google Ads: Which is Better for Your Business? | Automora">
 <meta name="twitter:description" content="Compare SEO vs Google Ads for your Thane business. Costs, timelines, ROI.">
 <meta name="twitter:image" content="https://www.automoratechsolutions.com/images/Logo.png">
-<link rel="icon" type="image/png" href="../../images/Logo copy.png">
-<link rel="apple-touch-icon" href="../../images/Logo copy.png">
-<link rel="shortcut icon" type="image/png" href="../../images/Logo copy.png">
+<link rel="icon" type="image/png" href="../../images/logo-copy.png">
+<link rel="apple-touch-icon" href="../../images/logo-copy.png">
+<link rel="shortcut icon" type="image/png" href="../../images/logo-copy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -86,8 +86,10 @@
 .bp-table td{padding:14px 20px;border-bottom:1px solid var(--wire);color:var(--fog);line-height:1.6;}
 .bp-table tr:last-child td{border-bottom:none;}
 .bp-table td:first-child{font-weight:600;color:var(--smoke);}
-@media(max-width:1024px){.blog-post-hero{padding:120px 24px 36px;}.blog-post{padding:0 24px 60px;}.bp-toc{padding:24px 28px;}.bp-author-bio{grid-template-columns:1fr;text-align:center;padding:28px;}.bp-author-av{margin:0 auto;}.bp-inline-cta{padding:28px 24px;}}
-@media(max-width:640px){.blog-post-hero{padding:100px 16px 28px;}.blog-post{padding:0 16px 40px;}.bp-toc{padding:20px 20px;}.bp-author-bio{padding:24px 20px;gap:16px;}.bp-title{font-size:clamp(28px,8vw,36px);}.bp-inline-cta{padding:24px 16px;}}
+@media(max-width:1024px){.blog-post-hero{padding:120px 24px 36px;}.blog-post{padding:0 24px 60px;}.bp-toc{padding:24px 28px;}.bp-author-bio{grid-template-columns:1fr;text-align:center;padding:28px;}.bp-author-av{margin:0 auto;}.bp-inline-cta{padding:28px 24px;}
+}
+@media(max-width:640px){.blog-post-hero{padding:100px 16px 28px;}.blog-post{padding:0 16px 40px;}.bp-toc{padding:20px 20px;}.bp-author-bio{padding:24px 20px;gap:16px;}.bp-title{font-size:clamp(28px,8vw,36px);}.bp-inline-cta{padding:24px 16px;}
+}
 </style>
 </head>
 <body>
@@ -95,11 +97,11 @@
 <nav>
   <div class="nav-blur"></div>
   <div class="nav-left"><a href="../../" class="logo"><img src="../../images/Logo-white.png" alt="Automora Tech Solutions" class="logo-img logo-dark"><img src="../../images/Logo.png" alt="Automora Tech Solutions" class="logo-img logo-light"></a></div>
-  <div class="nav-center"><div class="nav-pills"><a href="../../" class="np">Home</a><a href="../../services/" class="np">Services</a><a href="../../case-studies/" class="np">Work</a><a href="../../about/" class="np">About</a><a href="../../blog/" class="np">Blog</a><a href="../../contact/" class="np">Contact</a></div></div>
+  <div class="nav-center"><div class="nav-pills"><a href="../../" class="np">Home</a><a href="../../services/" class="np">Services</a><a href="../../case-studies/" class="np">Work</a><a href="../../about/" class="np">About</a><a href="../../blog/" class="np on">Blog</a><a href="../../contact/" class="np">Contact</a></div></div>
   <div class="nav-right">
     <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle theme"><span class="theme-icon-dark">☽</span><span class="theme-icon-light">☀</span></button>
     <a href="../../contact/" class="nav-cta">Start a Project ↗</a>
-    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;"><span></span><span></span><span></span></button>
+    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mob-menu" id="mobMenu">
@@ -292,10 +294,8 @@
 
 <script src="../../js/script.js"></script>
 <script>
-function toggleMob(){document.getElementById('hamBtn').classList.toggle('open');document.getElementById('mobMenu').classList.toggle('open');}
 document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',function(){const item=this.closest('.faq-item');const id=item.id;const wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!wasOpen)item.classList.add('open');});});
-  document.querySelectorAll('a,button,.blog-card,.faq-q,.bp-toc-list a').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));});
+  document.querySelectorAll('.faq-q').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));});
 });
 </script>
 </body>

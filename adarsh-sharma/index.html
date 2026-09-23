@@ -14,11 +14,11 @@
 <meta name="googlebot" content="index, follow">
 
 <!-- Canonical URL -->
-<link rel="canonical" href="https://www.automoratechsolutions.com/adarsh-sharma">
+<link rel="canonical" href="https://www.automoratechsolutions.com/adarsh-sharma/">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="profile">
-<meta property="og:url" content="https://www.automoratechsolutions.com/adarsh-sharma">
+<meta property="og:url" content="https://www.automoratechsolutions.com/adarsh-sharma/">
 <meta property="og:title" content="Adarsh Sharma - Co-Founder & CTO of Automora Tech Solutions LLP">
 <meta property="og:description" content="Co-Founder & Chief Technology Officer at Automora Tech Solutions LLP. AI automation expert, web developer, and software engineer based in Thane, Mumbai.">
 <meta property="og:image" content="https://www.automoratechsolutions.com/images/Adarsh.png">
@@ -30,15 +30,15 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://www.automoratechsolutions.com/adarsh-sharma">
+<meta name="twitter:url" content="https://www.automoratechsolutions.com/adarsh-sharma/">
 <meta name="twitter:title" content="Adarsh Sharma - Co-Founder & CTO of Automora Tech Solutions LLP">
 <meta name="twitter:description" content="Co-Founder & Chief Technology Officer at Automora Tech Solutions LLP. AI automation expert, web developer, and software engineer based in Thane, Mumbai.">
 <meta name="twitter:image" content="https://www.automoratechsolutions.com/images/Adarsh.png">
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="../images/Logo copy.png">
-<link rel="apple-touch-icon" href="../images/Logo copy.png">
-<link rel="shortcut icon" type="image/png" href="../images/Logo copy.png">
+<link rel="icon" type="image/png" href="../images/logo-copy.png">
+<link rel="apple-touch-icon" href="../images/logo-copy.png">
+<link rel="shortcut icon" type="image/png" href="../images/logo-copy.png">
 
 <!-- Preconnect for Performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,8 +73,6 @@
   "url": "https://www.automoratechsolutions.com/adarsh-sharma",
   "image": "https://www.automoratechsolutions.com/images/Adarsh.png",
   "knowsAbout": ["Web Development", "AI Automation", "Software Engineering", "WhatsApp Automation", "CRM Automation", "Business Automation", "SEO", "React", "Node.js", "Python", "Machine Learning"],
-  "alumniOf": "",
-  "birthDate": "",
   "nationality": "Indian",
   "email": "automoratechsolutionsllp@gmail.com",
   "telephone": "+91-9819810460"
@@ -316,6 +314,7 @@
   .project-card{padding:24px;}
   .skill-item{padding:18px;}
   .summary-stat{padding:20px 24px;}
+  .foot-grid{grid-template-columns:1fr;}
 }
 @media(max-width:480px){
   .skills-grid{grid-template-columns:1fr 1fr;}
@@ -354,9 +353,9 @@
       <span class="theme-icon-light">&#9728;</span>
     </button>
     <a href="../contact" class="nav-cta">Let's Talk</a>
-    <div class="ham" onclick="toggleMob()" id="ham">
+    <button class="ham" onclick="toggleMob()" id="ham" style="margin-left:16px;" aria-label="Menu">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </div>
 </nav>
 
@@ -852,14 +851,6 @@
 
 <!-- Main Script -->
 <script src="../js/script.js"></script>
-
-<!-- Mobile Menu Toggle -->
-<script>
-function toggleMob(){
-  document.getElementById('ham').classList.toggle('open');
-  document.getElementById('mobMenu').classList.toggle('open');
-}
-</script>
 
 <!-- Skill bar reveal on scroll -->
 <script>

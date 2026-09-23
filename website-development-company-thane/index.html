@@ -11,10 +11,10 @@
 <meta name="author" content="Automora Tech Solutions LLP">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-<link rel="canonical" href="https://www.automoratechsolutions.com/website-development-company-thane">
+<link rel="canonical" href="https://www.automoratechsolutions.com/website-development-company-thane/">
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.automoratechsolutions.com/website-development-company-thane">
+<meta property="og:url" content="https://www.automoratechsolutions.com/website-development-company-thane/">
 <meta property="og:title" content="Website Development Company Thane - Automora Tech Solutions">
 <meta property="og:description" content="Professional website development company in Thane. Custom, high-performance websites for Thane businesses.">
 <meta property="og:image" content="https://www.automoratechsolutions.com/images/Logo.png">
@@ -22,13 +22,13 @@
 <meta property="og:locale" content="en_IN">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://www.automoratechsolutions.com/website-development-company-thane">
+<meta name="twitter:url" content="https://www.automoratechsolutions.com/website-development-company-thane/">
 <meta name="twitter:title" content="Website Development Company Thane - Automora Tech Solutions">
 <meta name="twitter:description" content="Professional website development company in Thane. Custom, high-performance websites for Thane businesses.">
 <meta name="twitter:image" content="https://www.automoratechsolutions.com/images/Logo.png">
 
-<link rel="icon" type="image/png" href="../images/Logo copy.png">
-<link rel="apple-touch-icon" href="../images/Logo copy.png">
+<link rel="icon" type="image/png" href="../images/logo-copy.png">
+<link rel="apple-touch-icon" href="../images/logo-copy.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -199,7 +199,7 @@ body{
 a{text-decoration:none;color:inherit;}
 button{cursor:pointer;font-family:var(--syne);border:none;background:none;color:inherit;}
 body::before{
-  content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;
+  content:'';position:fixed;inset:0;z-index:1;pointer-events:none;
   opacity:.028;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-size:180px 180px;
@@ -220,7 +220,7 @@ nav{
 }
 .nav-blur{
   position:absolute;inset:0;
-  background:rgba(8,8,10,.95);
+  background:var(--nav-bg);
   backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);
   border-bottom:1px solid var(--wire);
   box-shadow:0 2px 20px rgba(0,0,0,0.3);
@@ -485,7 +485,8 @@ nav{
   background:var(--volt);transform:translateX(-50%);
   box-shadow:0 0 12px var(--volt);
 }
-@keyframes rotateSlow{to{transform:translate(-50%,-50%) rotate(360deg);}}
+@keyframes rotateSlow{to{transform:translate(-50%,-50%) rotate(360deg);}
+}
 .cta-inner{position:relative;z-index:2;}
 
 footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40px;}
@@ -519,11 +520,12 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .logo-img{height:36px;}
   .wrap,.pg-hero,.foot-inner{padding-left:24px;padding-right:24px;}
   .pg-hero-grid,.faq-layout,.content-grid{grid-template-columns:1fr;}
+  .content-grid{gap:40px;}
   .svc-cards-grid{grid-template-columns:1fr 1fr;}
   .svc-card:nth-child(even){border-right:1px solid var(--wire);}
   .svc-card:nth-last-child(-n+2){border-bottom:1px solid var(--wire);}
   .svc-card:last-child{border-bottom:none !important;}
-  .foot-grid{grid-template-columns:1fr 1fr;}
+  .foot-grid{grid-template-columns:1fr;}
   .faq-layout{grid-template-columns:1fr;gap:40px;padding:0 24px;}
   .faq-left{position:static;}
   .why-grid{grid-template-columns:1fr 1fr;}
@@ -551,6 +553,8 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .mob-menu{top:60px;}
   .process-alt-grid{padding:0 16px;}
   .conv-bar{padding:10px 16px;flex-direction:column;gap:8px;}
+
+  .content-grid{gap:24px;}
 }
 </style>
 <script type="application/ld+json">
@@ -685,7 +689,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
       <span class="theme-icon-light">☀</span>
     </button>
     <a href="../contact" class="nav-cta">Start a Project ↗</a>
-    <button class="ham" id="hamBtn" onclick="toggleMob()">
+    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -1133,30 +1137,8 @@ function toggleFaq(id){
   document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
   if(!wasOpen)el.classList.add('open');
 }
-document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('.faq-q').forEach(q=>{
-    q.addEventListener('click',function(){
-      const item=this.closest('.faq-item');
-      if(item)item.classList.toggle('open');
-    });
-  });
-});
-
-function toggleMob(){
-  document.getElementById('hamBtn').classList.toggle('open');
-  document.getElementById('mobMenu').classList.toggle('open');
-}
-
-document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click',function(e){
-      const id=this.getAttribute('href');
-      if(id==='#')return;
-      const el=document.querySelector(id);
-      if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}
-    });
-  });
-});
+/* FAQ binding handled by js/script.js */
+/* toggleMob handled by js/script.js */
 </script>
 <script src="../js/script.js"></script></body>
 </html>

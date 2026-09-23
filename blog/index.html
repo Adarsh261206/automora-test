@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08080A">
 <meta name="google-site-verification" content="YeyqfiHBuZt_IgWdHpFBy_ygUL95o1JygqHrAtrdOyw" />
 <title>Blog - AI Automation & Web Development Insights | Automora Mumbai</title>
 <meta name="title" content="Blog - AI Automation & Web Development Insights | Automora Mumbai">
@@ -11,22 +12,22 @@
 <meta name="author" content="Automora Tech Solutions LLP">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
-<link rel="canonical" href="https://www.automoratechsolutions.com/blog">
+<link rel="canonical" href="https://www.automoratechsolutions.com/blog/">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.automoratechsolutions.com/blog">
+<meta property="og:url" content="https://www.automoratechsolutions.com/blog/">
 <meta property="og:title" content="Blog - AI Automation & Web Development Insights | Automora Mumbai">
 <meta property="og:description" content="Read the latest insights from Automora Tech Solutions on AI automation, web development, SEO, WhatsApp automation, CRM, and digital growth strategies.">
 <meta property="og:image" content="https://www.automoratechsolutions.com/images/Logo.png">
 <meta property="og:site_name" content="Automora Tech Solutions">
 <meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://www.automoratechsolutions.com/blog">
+<meta name="twitter:url" content="https://www.automoratechsolutions.com/blog/">
 <meta name="twitter:title" content="Blog - AI Automation & Web Development Insights | Automora Mumbai">
 <meta name="twitter:description" content="Read the latest insights from Automora Tech Solutions on AI automation, web development, SEO, WhatsApp automation, CRM, and digital growth strategies.">
 <meta name="twitter:image" content="https://www.automoratechsolutions.com/images/Logo.png">
-<link rel="icon" type="image/png" href="../images/Logo copy.png">
-<link rel="apple-touch-icon" href="../images/Logo copy.png">
-<link rel="shortcut icon" type="image/png" href="../images/Logo copy.png">
+<link rel="icon" type="image/png" href="../images/logo-copy.png">
+<link rel="apple-touch-icon" href="../images/logo-copy.png">
+<link rel="shortcut icon" type="image/png" href="../images/logo-copy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -129,7 +130,7 @@
 </script>
 <style>
 .page{display:block;}
-.nav-blur{background:rgba(8,8,10,.95);}
+.nav-blur{background:var(--nav-bg);}
 .pg-hero{min-height:42vh;}
 .blog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:1440px;margin:0 auto;padding:80px 48px;}
 .blog-card{border:1px solid var(--wire);border-radius:20px;overflow:hidden;background:var(--ink2);transition:border-color .3s,transform .35s;cursor:pointer;position:relative;}
@@ -194,7 +195,7 @@
       <a href="../services/" class="np">Services</a>
       <a href="../case-studies/" class="np">Work</a>
       <a href="../about/" class="np">About</a>
-      <a href="../blog/" class="np">Blog</a>
+      <a href="../blog/" class="np on">Blog</a>
       <a href="../contact/" class="np">Contact</a>
     </div>
   </div>
@@ -204,7 +205,7 @@
       <span class="theme-icon-light">☀</span>
     </button>
     <a href="../contact/" class="nav-cta">Start a Project ↗</a>
-    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;">
+    <button class="ham" id="hamBtn" onclick="toggleMob()" style="margin-left:16px;" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -246,7 +247,7 @@
     <div class="blog-card-visual bcv-1">LSE</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">SEO</div>
-      <h3 class="blog-card-title">Local SEO for Businesses 2026</h3>
+      <h2 class="blog-card-title">Local SEO for Businesses 2026</h2>
       <p class="blog-card-excerpt">Complete guide to local SEO. Learn Google Business Profile optimisation, local citations, review management, and maps ranking strategies for local visibility.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -266,7 +267,7 @@
     <div class="blog-card-visual bcv-2">Dev</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">Web Development</div>
-      <h3 class="blog-card-title">Cost of Website Development in Thane 2026</h3>
+      <h2 class="blog-card-title">Cost of Website Development in Thane 2026</h2>
       <p class="blog-card-excerpt">Detailed breakdown of website development costs in Thane for 2026. Compare pricing for basic sites, e-commerce, and custom web applications with real quotes.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -286,7 +287,7 @@
     <div class="blog-card-visual bcv-3">WSP</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">Cybersecurity</div>
-      <h3 class="blog-card-title">Website Security Best Practices 2026</h3>
+      <h2 class="blog-card-title">Website Security Best Practices 2026</h2>
       <p class="blog-card-excerpt">Essential website security best practices. Learn about SSL, firewalls, malware protection, backups, and security monitoring to keep your site safe.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -306,7 +307,7 @@
     <div class="blog-card-visual bcv-4">AIA</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">AI Automation</div>
-      <h3 class="blog-card-title">What is AI Automation? Complete Guide 2026</h3>
+      <h2 class="blog-card-title">What is AI Automation? Complete Guide 2026</h2>
       <p class="blog-card-excerpt">Learn what AI automation is, how it works, and how businesses are using it to cut costs and scale. Complete guide with real-world examples and implementation tips.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -326,7 +327,7 @@
     <div class="blog-card-visual bcv-5">AI</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">AI Automation</div>
-      <h3 class="blog-card-title">AI Automation for Small Businesses: Complete Guide 2026</h3>
+      <h2 class="blog-card-title">AI Automation for Small Businesses: Complete Guide 2026</h2>
       <p class="blog-card-excerpt">Practical guide to AI automation for small businesses in Thane and Mumbai. Learn affordable tools, real ROI examples, and implementation strategies. Start automating without breaking the bank.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -346,7 +347,7 @@
     <div class="blog-card-visual bcv-6">Sec</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">Cybersecurity</div>
-      <h3 class="blog-card-title">Cybersecurity for Businesses 2026</h3>
+      <h2 class="blog-card-title">Cybersecurity for Businesses 2026</h2>
       <p class="blog-card-excerpt">Essential cybersecurity guide for businesses. Learn about common threats, employee training, security policies, and tools to protect your digital assets.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -366,7 +367,7 @@
     <div class="blog-card-visual bcv-1">SEA</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">SEO</div>
-      <h3 class="blog-card-title">SEO vs Google Ads: Which is Better for Your Business?</h3>
+      <h2 class="blog-card-title">SEO vs Google Ads: Which is Better for Your Business?</h2>
       <p class="blog-card-excerpt">Compare SEO vs Google Ads for your business. Learn about costs, timelines, ROI, and when to use each strategy for maximum digital growth.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -386,7 +387,7 @@
     <div class="blog-card-visual bcv-2">Dev</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">Web Development</div>
-      <h3 class="blog-card-title">Website Development Process Guide: Step-by-Step</h3>
+      <h2 class="blog-card-title">Website Development Process Guide: Step-by-Step</h2>
       <p class="blog-card-excerpt">Learn the complete website development process from discovery to launch. Includes planning, design, development, testing, and deployment phases.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -406,7 +407,7 @@
     <div class="blog-card-visual bcv-3">Web</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">Web Development</div>
-      <h3 class="blog-card-title">Custom vs Template Websites: Which is Better?</h3>
+      <h2 class="blog-card-title">Custom vs Template Websites: Which is Better?</h2>
       <p class="blog-card-excerpt">Compare custom vs template websites for your business. Learn about costs, flexibility, SEO performance, scalability, and which option delivers the best value.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -426,7 +427,7 @@
     <div class="blog-card-visual bcv-4">TSE</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">SEO</div>
-      <h3 class="blog-card-title">Technical SEO Guide 2026</h3>
+      <h2 class="blog-card-title">Technical SEO Guide 2026</h2>
       <p class="blog-card-excerpt">Complete technical SEO guide covering Core Web Vitals, schema markup, site architecture, crawl optimisation, and mobile-first indexing best practices.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -446,7 +447,7 @@
     <div class="blog-card-visual bcv-5">SWD</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">Cybersecurity</div>
-      <h3 class="blog-card-title">Secure Web Development Guide 2026</h3>
+      <h2 class="blog-card-title">Secure Web Development Guide 2026</h2>
       <p class="blog-card-excerpt">Learn secure web development practices including input validation, authentication, encryption, OWASP top 10 prevention, and security-first coding principles.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -466,7 +467,7 @@
     <div class="blog-card-visual bcv-6">WA</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">WhatsApp Automation</div>
-      <h3 class="blog-card-title">WhatsApp Automation Guide 2026</h3>
+      <h2 class="blog-card-title">WhatsApp Automation Guide 2026</h2>
       <p class="blog-card-excerpt">Complete WhatsApp automation guide for businesses. Learn chatbots, broadcast campaigns, order updates, and CRM integration for WhatsApp Business API.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -486,7 +487,7 @@
     <div class="blog-card-visual bcv-1">AIO</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">SEO</div>
-      <h3 class="blog-card-title">AI Search Optimization Guide 2026</h3>
+      <h2 class="blog-card-title">AI Search Optimization Guide 2026</h2>
       <p class="blog-card-excerpt">Learn how to optimise for AI-powered search engines like Google SGE, Bing Chat, and Perplexity. Future-proof your SEO strategy with actionable techniques.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -506,7 +507,7 @@
     <div class="blog-card-visual bcv-2">CRM</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">CRM Automation</div>
-      <h3 class="blog-card-title">CRM Automation Guide 2026</h3>
+      <h2 class="blog-card-title">CRM Automation Guide 2026</h2>
       <p class="blog-card-excerpt">Complete CRM automation guide for businesses. Learn how to automate lead capture, scoring, follow-ups, and sales pipeline management for higher conversions.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -526,7 +527,7 @@
     <div class="blog-card-visual bcv-3">EC</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">Web Development</div>
-      <h3 class="blog-card-title">Ecommerce Development Guide Thane 2026</h3>
+      <h2 class="blog-card-title">Ecommerce Development Guide Thane 2026</h2>
       <p class="blog-card-excerpt">Complete ecommerce development guide for businesses. Learn about platforms, costs, features, and launch strategy for your online store.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -546,7 +547,7 @@
     <div class="blog-card-visual bcv-4">WEM</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">Web Development</div>
-      <h3 class="blog-card-title">Website Maintenance Guide 2026: Essential Tips</h3>
+      <h2 class="blog-card-title">Website Maintenance Guide 2026: Essential Tips</h2>
       <p class="blog-card-excerpt">Complete website maintenance guide for businesses. Learn about security updates, backups, performance monitoring, content refreshes, and SEO maintenance.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -566,7 +567,7 @@
     <div class="blog-card-visual bcv-5">WFA</div>
     <div class="blog-card-info">
       <div class="blog-card-cat">AI Automation</div>
-      <h3 class="blog-card-title">Workflow Automation Examples for Business 2026</h3>
+      <h2 class="blog-card-title">Workflow Automation Examples for Business 2026</h2>
       <p class="blog-card-excerpt">Real workflow automation examples across industries. See how businesses automate invoice processing, lead management, HR onboarding, and customer support.</p>
       <div class="blog-card-meta">
         <div class="blog-card-author">
@@ -720,20 +721,7 @@
 
 <script src="../js/script.js"></script>
 <script>
-function toggleMob(){
-  document.getElementById('hamBtn').classList.toggle('open');
-  document.getElementById('mobMenu').classList.toggle('open');
-}
 document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('.faq-q').forEach(q=>{
-    q.addEventListener('click',function(){
-      const item=this.closest('.faq-item');
-      const id=item.id;
-      const wasOpen=item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-      if(!wasOpen)item.classList.add('open');
-    });
-  });
   document.querySelectorAll('a,button,.blog-card,.faq-q').forEach(el=>{
     el.addEventListener('mouseenter',()=>document.body.classList.add('hover-active'));
     el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-active'));

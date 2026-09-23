@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08080A">
 <meta name="google-site-verification" content="YeyqfiHBuZt_IgWdHpFBy_ygUL95o1JygqHrAtrdOyw" />
 
 <!-- Primary Meta Tags -->
@@ -36,9 +37,9 @@
 <meta name="twitter:image" content="https://www.automoratechsolutions.com/images/Logo.png">
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="images/Logo copy.png">
-<link rel="apple-touch-icon" href="images/Logo copy.png">
-<link rel="shortcut icon" type="image/png" href="images/Logo copy.png">
+<link rel="icon" type="image/png" href="images/logo-copy.png">
+<link rel="apple-touch-icon" href="images/logo-copy.png">
+<link rel="shortcut icon" type="image/png" href="images/logo-copy.png">
 
 <!-- Preconnect for Performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -138,10 +139,9 @@
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Mumbai",
+    "addressLocality": ["Mumbai", "Thane"],
     "addressRegion": "Maharashtra",
-    "addressCountry": "IN",
-    "addressLocality": "Thane"
+    "addressCountry": "IN"
   },
   "geo": {
     "@type": "GeoCoordinates",
@@ -512,14 +512,16 @@
 [data-theme="light"] .scroll-line{background:var(--wire2);}
 [data-theme="light"] .svc-num{color:var(--ghost);}
 
-html{font-size:16px;scroll-behavior:smooth;}
+html{font-size:16px;scroll-behavior:smooth;overflow-x:hidden;}
 body{
   background:var(--ink);color:var(--smoke);
   font-family:var(--syne);overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
   transition:background 0.4s ease, color 0.4s ease;
 }
-*,*::before,*::after{transition:background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, fill 0.35s ease;}
+@media(prefers-reduced-motion:no-preference){*,*::before,*::after{transition:background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, fill 0.35s ease;}
+}
+img{max-width:100%;height:auto;} a,p,li{overflow-wrap:break-word;word-break:break-word;}
 a{text-decoration:none;color:inherit;}
 button{cursor:pointer;font-family:var(--syne);border:none;background:none;color:inherit;outline:none;}
 button:focus{outline:none;}
@@ -542,7 +544,8 @@ body{cursor:none;}
   opacity:0.45;
   display:none;
 }
-@media(min-width:1200px){.hero-eyebrow-ring{display:block;}}
+@media(min-width:1200px){.hero-eyebrow-ring{display:block;}
+}
 
 /* Hero headline upgrade — sharper gradient on w2 */
 .hero-headline .w2{
@@ -749,7 +752,8 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 48
 .page.on{
   animation:pageFadeIn .4s cubic-bezier(.23,1,.32,1) both;
 }
-@keyframes pageFadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
+@keyframes pageFadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}
+}
 
 .theme-toggle{
   display:flex;align-items:center;justify-content:center;
@@ -778,7 +782,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 48
 
 /* ─── GRAIN OVERLAY ─── */
 body::before{
-  content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;
+  content:'';position:fixed;inset:0;z-index:1;pointer-events:none;
   opacity:.028;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-size:180px 180px;
@@ -817,12 +821,12 @@ nav{
 }
 .nav-blur{
   position:absolute;inset:0;
-  background:rgba(8,8,10,.95);
+  background:var(--nav-bg);
   backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);
   border-bottom:1px solid var(--wire);
   box-shadow:0 2px 20px rgba(0,0,0,0.3);
 }
-[data-theme="light"] .nav-blur{background:rgba(248,247,244,.96);box-shadow:0 2px 20px rgba(0,0,0,0.08);}
+[data-theme="light"] .nav-blur{background:var(--nav-bg);box-shadow:0 2px 20px rgba(0,0,0,0.08);}
 .nav-left,.nav-center,.nav-right{position:relative;z-index:1;display:flex;align-items:center;}
 .nav-right{gap:10px;}
 .logo{
@@ -937,7 +941,8 @@ nav{
 .line-rv:nth-child(2) span{animation-delay:.08s;}
 .line-rv:nth-child(3) span{animation-delay:.16s;}
 .line-rv:nth-child(4) span{animation-delay:.24s;}
-@keyframes lineUp{to{transform:translateY(0);}}
+@keyframes lineUp{to{transform:translateY(0);}
+}
 
 /* ═══════════════════════════════════
    SHARED UTILS
@@ -1013,7 +1018,8 @@ nav{
   pointer-events:none;
   animation:blobFloat 8s ease-in-out infinite;
 }
-@keyframes blobFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(40px);}}
+@keyframes blobFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(40px);}
+}
 .hero-blob2{
   position:absolute;bottom:-20%;left:-10%;
   width:600px;height:600px;border-radius:50%;
@@ -1040,7 +1046,8 @@ nav{
   color:var(--volt);margin-bottom:40px;width:fit-content;
 }
 .s-pulse{width:6px;height:6px;border-radius:50%;background:var(--volt);animation:sp 2s ease-in-out infinite;}
-@keyframes sp{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.35;transform:scale(.8);}}
+@keyframes sp{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.35;transform:scale(.8);}
+}
 
 /* Hero type */
 .hero-t1{
@@ -1142,7 +1149,8 @@ nav{
 }
 [data-theme="light"] .t-item{color:rgba(20,18,20,0.22);}
 [data-theme="light"] .t-item:hover{color:rgba(20,18,20,0.9);}
-@keyframes tickerMove{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@keyframes tickerMove{from{transform:translateX(0);}to{transform:translateX(-50%);}
+}
 
 /* ═══════════════════════════════════
    HOME — LOGO/TRUST STRIP
@@ -1307,7 +1315,8 @@ nav{
 .sv-bar-meta{display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;color:var(--fog);}
 .sv-bar-track{height:4px;background:var(--ink2);border-radius:2px;overflow:hidden;}
 .sv-bar-fill{height:100%;border-radius:2px;background:var(--volt);animation:barGrow 1.8s cubic-bezier(.23,1,.32,1) forwards;width:0;}
-@keyframes barGrow{to{width:var(--w);}}
+@keyframes barGrow{to{width:var(--w);}
+}
 
 /* ═══════════════════════════════════
    HOME — NUMBERS (animated counter)
@@ -1473,7 +1482,8 @@ nav{
   background:var(--volt);transform:translateX(-50%);
   box-shadow:0 0 12px var(--volt);
 }
-@keyframes rotateSlow{to{transform:translate(-50%,-50%) rotate(360deg);}}
+@keyframes rotateSlow{to{transform:translate(-50%,-50%) rotate(360deg);}
+}
 .cta-inner{position:relative;z-index:2;}
 
 /* ═══════════════════════════════════
@@ -1491,13 +1501,12 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   font-size:12px;color:var(--fog);transition:border-color .2s,color .2s,background .2s;
 }
 .soc-btn:hover{border-color:var(--volt);color:var(--volt);background:var(--volt-dim);}
-.foot-col-h{font-family:var(--mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--ghost);margin-bottom:20px;}
+.foot-col-h{font-family:var(--mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--fog);margin-bottom:20px;}
 .foot-links{display:flex;flex-direction:column;gap:11px;}
 .foot-links a{font-size:13px;color:var(--fog);transition:color .2s;}
 .foot-links a:hover{color:var(--smoke);}
 .foot-bottom{display:flex;align-items:center;justify-content:space-between;}
 .foot-copy{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--fog);}
-.foot-col-h{font-family:var(--mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--fog);margin-bottom:20px;}
 .foot-legal{display:flex;gap:24px;}
 .foot-legal a{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--fog);transition:color .2s;}
 .foot-legal a:hover{color:var(--smoke);}
@@ -1507,7 +1516,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
 ═══════════════════════════════════ */
 .pg-hero{
   min-height:52vh;display:flex;flex-direction:column;justify-content:flex-end;
-  padding:140px 48px 72px;max-width:1440px;margin:0 auto;
+  padding:152px 48px 72px;max-width:1440px;margin:0 auto;
   position:relative;overflow:hidden;
 }
 .pg-hero-bg{
@@ -1753,7 +1762,8 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
 .spin-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
 .spin-orb{width:90px;height:90px;border-radius:50%;background:var(--volt);display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px var(--volt-glow);}
 .spin-orb span{font-family:var(--serif);font-size:32px;font-style:italic;color:var(--ink);}
-@keyframes rotateUp{from{transform:rotate(0deg);}to{transform:rotate(-360deg);}}
+@keyframes rotateUp{from{transform:rotate(0deg);}to{transform:rotate(-360deg);}
+}
 
 /* ═══════════════════════════════════
    ██ CONTACT PAGE
@@ -1862,7 +1872,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .hero-main{padding:40px 16px 32px;margin-top:60px;}
   .hero-headline{font-size:clamp(40px,12vw,72px);line-height:1.05;}
   .nums-grid,.svc-cards-grid,.pkg-grid,.values-grid,.team-grid,.phi-grid,.testi-grid{grid-template-columns:1fr;}
-  .foot-grid{grid-template-columns:1fr 1fr;}
+  .foot-grid{grid-template-columns:1fr;}
   .faq-grid{margin:40px 0 0;}
   .hero-stat-panel{grid-template-columns:1fr 1fr;}
   .scroll-hint{display:none;}
@@ -2532,7 +2542,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
       <div class="pg-hero-count">04 capabilities</div>
     </div>
     <div class="pg-hero-grid rv d1">
-      <h1 class="h-xl">Every<br><em>digital</em><br>need.</h1>
+      <h2 class="h-xl">Every<br><em>digital</em><br>need.</h2>
       <div>
         <p class="body-t" style="max-width:420px;font-size:16px;line-height:1.9;margin-bottom:32px;">From a single landing page to a full AI-powered growth stack — we have the expertise to take your digital presence to the next level.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
@@ -2681,7 +2691,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
     <div class="pg-hero-bg"></div>
     <div class="pg-hero-glow"></div>
     <div class="pg-hero-grid rv d1">
-      <h1 class="h-xl">Case Studies —<br>Automora Tech<br><em>Solutions</em></h1>
+      <h2 class="h-xl">Case Studies —<br>Automora Tech<br><em>Solutions</em></h2>
       <div>
         <p class="body-t" style="max-width:420px;font-size:16px;line-height:1.9;margin-bottom:32px;">Real projects. Real results. Every website, AI bot, and growth campaign we ship has a story behind it — and measurable outcomes to match.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
@@ -2963,7 +2973,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
     <div class="pg-hero-bg"></div>
     <div class="pg-hero-glow"></div>
     <div class="pg-hero-grid rv d1">
-      <h1 class="h-xl">About Automora<br>Tech Solutions<br><em>LLP</em></h1>
+      <h2 class="h-xl">About Automora<br>Tech Solutions<br><em>LLP</em></h2>
       <div>
         <p class="body-t" style="max-width:420px;font-size:16px;line-height:1.9;margin-bottom:32px;">A Mumbai-based digital studio that builds AI automation, stunning web experiences, and growth systems for brands that refuse to settle for average.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
@@ -3190,7 +3200,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
     <div class="pg-hero-bg"></div>
     <div class="pg-hero-glow"></div>
     <div class="pg-hero-grid rv d1">
-      <h1 class="h-xl speakable">Let's Start a<br>Conversation —<br><em>Automora Tech<br>Solutions</em></h1>
+      <h2 class="h-xl speakable">Let's Start a<br>Conversation —<br><em>Automora Tech<br>Solutions</em></h2>
       <div>
         <p class="body-t speakable" style="max-width:420px;font-size:16px;line-height:1.9;margin-bottom:32px;">Ready to transform your digital presence? Whether you need a website, AI automation, or a full growth strategy — we're here to help. Reach out and let's build something remarkable together.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
@@ -3482,8 +3492,9 @@ function toggleTheme(){
 /* ── CURSOR ── */
 const dot=document.getElementById('c-dot'),ring=document.getElementById('c-ring');
 let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
-(function raf(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(raf);})();
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;if(dot&&ring){dot.style.left=mx+'px';dot.style.top=my+'px';}
+});
+(function raf(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;if(dot&&ring){ring.style.left=rx+'px';ring.style.top=ry+'px';}requestAnimationFrame(raf);})();
 
 /* ── CURSOR HOVER ── */
 function bindHover(){
@@ -3522,7 +3533,8 @@ document.getElementById('page-home').appendChild(ft);
 /* ── REVEAL ── */
 function doReveal(){
   const obs=new IntersectionObserver(es=>{
-    es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target);}});
+    es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target);}
+});
   },{threshold:.06});
   document.querySelectorAll('.page.on .rv:not(.show)').forEach(el=>obs.observe(el));
 }
@@ -3549,7 +3561,8 @@ function initCounters(){
   const obs=new IntersectionObserver(es=>{
     es.forEach(e=>{
       if(e.isIntersecting){
-        e.target.querySelectorAll('.count').forEach(c=>{if(!c.dataset.done){c.dataset.done=1;animateCounter(c);}});
+        e.target.querySelectorAll('.count').forEach(c=>{if(!c.dataset.done){c.dataset.done=1;animateCounter(c);}
+});
         obs.unobserve(e.target);
       }
     });

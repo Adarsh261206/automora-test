@@ -30,9 +30,6 @@ Disallow: /*.json$
 
 # Sitemaps
 Sitemap: https://www.automoratechsolutions.com/sitemap.xml
-Sitemap: https://www.automoratechsolutions.com/sitemap-pages.xml
-Sitemap: https://www.automoratechsolutions.com/sitemap-blog.xml
-Sitemap: https://www.automoratechsolutions.com/sitemap-images.xml
 
 # Crawl-delay
 Crawl-delay: 1

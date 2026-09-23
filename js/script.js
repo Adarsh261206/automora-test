@@ -65,21 +65,48 @@ document.addEventListener('DOMContentLoaded',initCounters);
 
 /* ── FAQ ACCORDION ── */
 function toggleFaq(id){
-  const el=document.getElementById(id),wasOpen=el.classList.contains('open');
+  const el=document.getElementById(id);
+  if(!el) return;
+  const wasOpen=el.classList.contains('open');
   document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
   if(!wasOpen)el.classList.add('open');
 }
-
-/* ── SELECT ALL FAQS ── */
-document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('.faq-q').forEach(q=>{
-    q.addEventListener('click',function(){
-      const item=this.closest('.faq-item');
-      const id=item.id;
-      toggleFaq(id);
-    });
-  });
+/* FAQ click handling consolidated here — inline duplicates removed to prevent double-fire.
+   Uses event delegation so dynamically added FAQs also work without extra bindings. */
+document.addEventListener('click', function(e){
+  const q = e.target.closest('.faq-q');
+  if(!q) return;
+  const item = q.closest('.faq-item');
+  if(item && item.id) toggleFaq(item.id);
 });
+/* ── SERVICE ACCORDION (Thane/Mumbai) ── */
+function toggleSvc(id){
+  const el=document.getElementById(id);
+  if(!el) return;
+  const wasOpen=el.classList.contains('open');
+  document.querySelectorAll('.svc-item').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen) el.classList.add('open');
+}
+document.addEventListener('click', function(e){
+  const q = e.target.closest('.svc-q');
+  if(!q) return;
+  const item = q.closest('.svc-item');
+  if(item && item.id) toggleSvc(item.id);
+});
+
+/* ── MOBILE MENU ── */
+function toggleMob(){
+  const hamBtn=document.getElementById('hamBtn')||document.getElementById('ham');
+  const mobMenu=document.getElementById('mobMenu');
+  if(hamBtn) hamBtn.classList.toggle('open');
+  if(mobMenu) mobMenu.classList.toggle('open');
+}
+function closeMob(){
+  const hamBtn=document.getElementById('hamBtn')||document.getElementById('ham');
+  const mobMenu=document.getElementById('mobMenu');
+  if(hamBtn) hamBtn.classList.remove('open');
+  if(mobMenu) mobMenu.classList.remove('open');
+}
 
 /* ── SMOOTH SCROLL ── */
 document.addEventListener('DOMContentLoaded',function(){

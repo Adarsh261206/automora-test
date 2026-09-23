@@ -154,14 +154,18 @@
 [data-theme="light"] .scroll-line{background:var(--wire2);}
 [data-theme="light"] .svc-num{color:var(--ghost);}
 
-html{font-size:16px;scroll-behavior:smooth;}
+html{font-size:16px;scroll-behavior:smooth;overflow-x:hidden;}
 body{
   background:var(--ink);color:var(--smoke);
   font-family:var(--syne);overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
   transition:background 0.4s ease, color 0.4s ease;
 }
-*,*::before,*::after{transition:background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, fill 0.35s ease;}
+@media(prefers-reduced-motion:no-preference){
+  *,*::before,*::after{transition:background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, fill 0.35s ease;}
+}
+img{max-width:100%;height:auto;}
+a, p, li, span, div{overflow-wrap:break-word;word-break:break-word;}
 a{text-decoration:none;color:inherit;}
 button{cursor:pointer;font-family:var(--syne);border:none;background:none;color:inherit;outline:none;}
 button:focus{outline:none;}
@@ -174,7 +178,7 @@ body{cursor:none;}
 
 /* ─── GRAIN OVERLAY ─── */
 body::before{
-  content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;
+  content:'';position:fixed;inset:0;z-index:1;pointer-events:none;
   opacity:.028;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-size:180px 180px;
@@ -205,7 +209,7 @@ nav{
 }
 .nav-blur{
   position:absolute;inset:0;
-  background:rgba(8,8,10,.95);
+  background:var(--nav-bg);
   backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);
   border-bottom:1px solid var(--wire);
   box-shadow:0 2px 20px rgba(0,0,0,0.3);
